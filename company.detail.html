@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://www.ambitionbox.com/ -->
+<html lang="en" class="" style="--vh: 6.67px">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Thông Tin Công Ty | JobsReview</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="./images/browser_icon_48x48.png"
+    />
+    <link rel="preload" href="./fonts/400.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/700.woff2" as="font" type="font/woff2"/>
+    <link rel="preload" href="./fonts/600.woff2" as="font" type="font/woff2"/>
+    <link rel="preload" href="./fonts/500.woff2" as="font" type="font/woff2"/>
+    <link rel="preload" href="./fonts/icomoon.woff2" as="font" type="font/woff2"/>
+    <link rel="stylesheet" href="./styles/home.css"/>
+    <link rel="stylesheet" href="./styles/company.detail.css"/>
+    <link rel="stylesheet" href="./styles/lightslider.min.css"/>
+  </head>
+  <body>
+    <div class="sliding-sticky-menu" id="headerWrapper">
+      <nav class="main-menu desktop blue-menu">
+        <nav class="left-section">
+          <a href="/" class="logo_name">
+            <img src="./images/app.png" height="100" width="100" alt="app_name" />
+            JobsReview
+          </a>
+          <a href="https://localhost:5000/companies.html" > Công ty </a>
+          <a href="https://localhost:5000/reviews.html" >Đánh giá </a>
+          <a href="https://localhost:5000/salaries.html" >Tiền lương</a>
+        </nav>
+        <div class="right-section">
+          <a onclick="loginPopUp();" href="javascript:void(0);" class="login not-logged-in login-text">Đăng nhập</a>
+          <div class="border-right icon-tag" >
+            <span onclick="toggleNotification();" id="notificationBell" href="javascript:void(0);">
+              <img id="bell-icon" src="./images/bell-icon.svg" width="14" height="16" alt="bell" /><span
+                id="notification-count"
+                class="badge"
+                style="display: none">
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="abh_info" class="content container">
+        <div class="wrap">
+          <a href="#">
+            <img src="./images/fpt.png" width="100" height="100" alt="Capgemini logo" class="logo">
+          </a>
+        </div>
+        <div class="content-wrap">
+          <div class="content">
+            <p class="name bold-display mg-btm-4">FPT Software</p>
+            <div class="rating-wrapper">
+              <p >
+                <i class="icon icon-star"></i>
+                <span class="bold-list-header">3.8</span>
+              </p>
+              <a href="#">
+                <p class="review-count caption-strong-medium" style="margin-left: 12px;">15.6k lượt đánh giá</p>
+              </a>
+              <div class="tooltip right">
+                <div class="question-badge">i</div>
+              </div>
+            </div>
+          </div>
+          <p class="about-us caption-subdued bold-header-desc">FPT (Tập đoàn FPT, tiếng Anh: FPT Group), tên viết tắt của Công ty Cổ phần FPT (tên cũ là Công ty Phát triển và Đầu tư Công nghệ), là một trong những công ty dịch vụ công nghệ thông tin lớn nhất tại Việt Nam với lĩnh vực kinh doanh chính là cung cấp các sản phẩm dịch vụ công nghệ thông tin[1] Theo Stevie® Award...
+            <a href="#" class="read-more sbold-header-desc">read more</a>
+          </p>
+          <div class="sm-flex">
+            <div class="basic-info">
+              <div class="infoEntity full-width">
+                <img src="./images/globe.svg" width="20" height="20">
+              <p class="sbold-list-header">Việt Nam</p>
+            </div>
+          </div>
+          <div class="chips-block noscrollbars-sm">
+            <a href="#" class="ab_chip body-medium">IT Services &amp; Consulting</a>
+            <a href="#" class="ab_chip body-medium">Software Product</a>
+            <a href="#" class="ab_chip body-medium">+6 mục nữa<a href=""></a></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-col-right flex-col">
+        <div class="engaged-employer customEngagedStyle">
+          <a href="#" class="text">
+            <i class="icon-verified"></i>
+            Engaged employer
+          </a>
+          <div class="tooltip">
+            <div class="question-badge">?</div>
+          </div>
+        </div>
+        <div class="bottom-wrapper">
+          <button class="btn button-with-count hollow customFollowStyle">Theo dõi (29.5k)</button>
+          <button class="ab_btn contribute-btn">
+            <span class="ctas-btn-medium">Viết đánh giá</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div job-profile-name="" id="ab_company_review_rating_card" class="ab_comp_rating_card container container">
+        <div class="ab_section-header container header block">
+          <div class="titleCont">
+            <h1 class="title bold-title-l paddingFix" style="font-size:1.5rem;">
+              <span>Capgemini Reviews</span>
+            </h1>
+            <div class="descText caption-subdued-medium" style="font-size:0.875rem;margin-left:6px;margin-top:7px;">based on 15.6k reviews</div>
+          </div>
+        </div>
+        <div class="tooltip right">
+          <div class="question-badge">i</div>
+          <span class="tooltiptext" style="display:none;">Capgemini overall rating is based on 15.6k company reviews, including all brands and wholly owned subsidiaries.</span>
+        </div>
+        <div class="ab_card card">
+          <div class="flex-wrap">
+            <div class="overall-wrap">
+              <p class="bold-section-header title">Overall Rating</p>
+              <div style="display:flex;">
+                <div class="badge-cont">
+                  <div class="badge-x-large rating-35">
+                    <i class="icon icon-star"></i>
+                    <span class="rating-val bold-title">3.8</span>
+                  </div>
+                </div>
+                <div class="rating_stats_bars">
+                  <div class="rating_bar_wrap with-checkbox"
+                  ><input type="checkbox" name="rating-5" id="rating-5" value="5" class="custom-checkbox">
+                  <label for="rating-5" class="label-wrapper custom-checkbox-label">
+                    <p class="stars_values">5</p>
+                    <i class="icon icon-star"></i>
+                    <div class="rating_bar" style="background:#e2e2e2;">
+                      <div class="rating_bar rating-45" style="width:28%;"></div>
+                    </div>
+                    <p class="stars_values count body-medium">4.3k</p>
+                  </label>
+                </div>
+                <div class="rating_bar_wrap with-checkbox">
+                  <input type="checkbox" name="rating-4" id="rating-4" value="4" class="custom-checkbox">
+                  <label for="rating-4" class="label-wrapper custom-checkbox-label">
+                    <p class="stars_values">4</p>
+                    <i class="icon icon-star"></i>
+                    <div class="rating_bar" style="background:#e2e2e2;">
+                      <div class="rating_bar rating-4" style="width:31%;"></div>
+                    </div>
+                    <p class="stars_values count body-medium">4.8k</p>
+                  </label>
+                </div>
+                <div class="rating_bar_wrap with-checkbox">
+                  <input type="checkbox" name="rating-3" id="rating-3" value="3" class="custom-checkbox">
+                  <label for="rating-3" class="label-wrapper custom-checkbox-label">
+                    <p class="stars_values">3</p>
+                    <i class="icon icon-star"></i>
+                    <div class="rating_bar" style="background:#e2e2e2;">
+                      <div class="rating_bar rating-3" style="width:20%;"></div>
+                    </div>
+                    <p class="stars_values count body-medium">3.1k</p>
+                  </label>
+                </div>
+                <div class="rating_bar_wrap with-checkbox">
+                  <input type="checkbox" name="rating-2" id="rating-2" value="2" class="custom-checkbox">
+                  <label for="rating-2" class="label-wrapper custom-checkbox-label">
+                    <p class="stars_values">2</p>
+                    <i class="icon icon-star"></i>
+                    <div class="rating_bar" style="background:#e2e2e2;">
+                      <div class="rating_bar rating-2" style="width:9%;"></div>
+                    </div>
+                    <p class="stars_values count body-medium">1.4k</p>
+                  </label>
+                </div>
+                <div class="rating_bar_wrap with-checkbox">
+                  <input type="checkbox" name="rating-1" id="rating-1" value="1" class="custom-checkbox">
+                  <label for="rating-1" class="label-wrapper custom-checkbox-label">
+                    <p class="stars_values">1</p>
+                    <i class="icon icon-star"></i>
+                    <div class="rating_bar" style="background:#e2e2e2;">
+                      <div class="rating_bar rating-1" style="width:13%;"></div>
+                    </div>
+                    <p class="stars_values count body-medium">2k</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="category-ratings">
+            <p class="bold-section-header title">Category Ratings</p>
+            <div class="avg_review_wrap">
+              <div >
+                <i class="icon icon-star star-rating-35"></i>
+                <p class="card-rating bold-list-header">3.9</p>
+                <p class="body-medium rating-name">Job Security</p>
+              </div>
+              <div >
+                <i class="icon icon-str star-rating-35"></i>
+                <p class="card-rating bold-list-header">3.7</p>
+                <p class="body-medium rating-name">Skill development</p>
+              </div>
+              <div >
+                <i class="icon icon-star star-rating-35"></i>
+                <p class="card-rating bold-list-header">3.7</p>
+                <p class="body-medium rating-name">Work-Life balance</p>
+              </div>
+              <div>
+                3.7
+              </p>
+              <p class="body-medium rating-name">Company culture</p>
+            </div>
+            <div>3.4
+            </p>
+            <p class="body-medium rating-name">Work Satisfaction</p>
+          </div>
+          <div >3.4
+          </p>
+          <p class="body-medium rating-name">Career growth</p>
+        </div>
+        <div >3.0
+        </p>
+          <p class="body-medium rating-name">Salary &amp; Benefits</p>
+        </div>
+      </div> -->
+
+    <footer class="footer_wrap">
+      <div class="footer_links_content">
+        <div class="info">
+          <div class="logo_wrap">
+            <img src="./images/app.png" style="width: 100px; height: 100px;"/>
+            <span class="logo_text">JobsReview</span>
+          </div>
+        </div>
+        <div class="quick_links_wrap">
+          <p>Người dùng</p>
+          <div class="quick_links">
+            <div class="quick_link">
+              <a href="#">Công ty</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Đánh giá</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Tiền lương</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Công việc</a>
+            </div>
+          </div>
+        </div>
+        <div class="quick_links_wrap">
+          <p>JobsReview</p>
+          <div class="quick_links">
+            <div class="quick_link">
+              <a href="#">Về chúng tôi</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Làm việc với chúng tôi</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Gửi email cho chúng tôi</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Blog</a></div>
+            <div class="quick_link">
+              <a href="#">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <div class="quick_links_wrap">
+          <p>Hỗ trợ</p>
+          <div class="quick_links">
+            <div class="quick_link">
+              <a href="#">Chính sách bảo mật</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Than phiền</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Triệu tập/Thông báo</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Nguyên tắc cộng đồng</a>
+            </div>
+            <div class="quick_link">
+              <a href="#">Điều khoản sử dụng</a>
+            </div>
+          </div>
+        </div>
+        <div class="quick_btns_wrap"></div>
+        <div class="quick_btns_wrap">
+          <p>Theo dõi chúng tôi</p>
+          <div class="social">
+            <a href="#">
+              <img
+                class="lazyload"
+                alt="logo instagram"
+                width="24"
+                height="24"
+                src="./images/instagram-logo.svg"/>
+            </a>
+            <a href="#">
+              <img
+                class="lazyload"
+                alt="logo linkedin"
+                width="24"
+                height="24"
+                src="./images/linkedin-logo.svg"/>
+            </a>
+            <a href="#">
+              <img
+                class="lazyload"
+                alt="logo facebook"
+                width="24"
+                height="24"
+                src="./images/fb-logo.svg"/>
+              </a>
+              <a href="#">
+                <img
+                class="lazyload"
+                alt="logo twitter"
+                width="24"
+                height="24"
+                src="./images/twitter-logo.svg"/>
+              </a>
+          </div>
+          <p>Đóng góp</p>
+          <a href="#">
+            <button class="btn">Viết bài đánh giá</button>
+          </a>
+          <a href="#">
+            <button class="btn">Chia sẻ về tiền lương</button>
+          </a>
+        </div>
+      </div>
+      <div class="copy_right_wrap">
+        <p>Tất cả các quyền được bảo lưu © 2022 Bitcoin Team HCMUS.</p>
+      </div>
+    </footer>
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/common.js"></script>
+    <script src="./javascripts/lightslider.min.js"></script>
+    <script src="./javascripts/home.js"></script>
+  </body>
+</html>

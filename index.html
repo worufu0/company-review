@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Trang chủ | AppName</title>
+    <title>Trang chủ | JobsReview</title>
     <link
       rel="icon"
       type="image/png"
@@ -24,20 +24,21 @@
     <div class="sliding-sticky-menu" id="headerWrapper">
       <nav class="main-menu desktop blue-menu">
         <nav class="left-section">
-          <a href="https://localhost:5000/" class="logo_name">
-            <img src="./images/logo.svg" height="32" width="26.5" alt="app_name" />
-            AppName
+          <a href="/" class="logo_name">
+            <img src="./images/app.png" height="100" width="100" alt="app_name" />
+            JobsReview
           </a>
-          <a href="https://localhost:5000/companies.html" title="Công ty | AppHome" class="link list"> Công ty </a>
-          <a href="https://localhost:5000/reviews.html" title="Đánh giá | AppHome" class="link reviews">Đánh giá </a>
-          <a href="https://localhost:5000/salaries.html" title="Tiền lương | AppName" class="link salaries">Tiền lương</a>
+          <a href="/companies.html" > Công ty </a>
+          <a href="/reviews.html" >Đánh giá </a>
+          <a href="/salaries.html" >Tiền lương</a>
         </nav>
         <div class="right-section">
           <a onclick="loginPopUp();" href="javascript:void(0);" class="login not-logged-in login-text">Đăng nhập</a>
-          <div class="border-right icon-tag" title="Notifications">
+          <div class="border-right icon-tag" >
             <span onclick="toggleNotification();" id="notificationBell" href="javascript:void(0);">
               <img id="bell-icon" src="./images/bell-icon.svg" width="14" height="16" alt="bell" /><span
                 id="notification-count"
+                
                 class="badge"
                 style="display: none">
           </div>
@@ -53,7 +54,7 @@
             Khám phá những nơi tốt nhất để làm việc!
           </h1>
           <div class="cover_image_text">
-            <span itemprop="description">Đánh giá của công ty. tiền lương.</span>
+            <span itemprop="description">Đánh giá của công ty. xem chia sẻ về tiền lương.</span>
           </div>
         </div>
         <div class="search_new">
@@ -62,7 +63,7 @@
               <input
                 class="search_company_input js-menu-search tt-input"
                 type="text"
-                placeholder="Tìm kiếm theo công ty hoặc chỉ định"
+                placeholder="Tìm kiếm theo công ty hoặc từ ngữ liên quan"
                 style="position: relative; vertical-align: top"
                 style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; vertical-align: top; width: 457px;">
               </span>
@@ -82,12 +83,12 @@
       <div class="home_reviews">
         <div class="section_heading_wrap">
           <div class="titleCont">
-            <h2 class="section_heading">Đánh giá của công ty</h2>
+            <h2 class="section_heading">Đánh giá của nhân viên</h2>
             <p class="section_subheading">
-              Nhân viên thực sự chia sẻ cách làm việc tại công ty của họ. Đọc đánh giá và đưa ra quyết định sáng suốt.
+              Nhân viên thực sự chia sẻ cách làm việc tại công ty của họ.
             </p>
           </div>
-          <a href="#" class="section_view_all" title="View all reviews">Xem tất cả</a>
+          <a href="#" class="section_view_all" >Xem tất cả</a>
         </div>
         <div class="slider_wrap">
           <div class="lSSlideOuter">
@@ -98,33 +99,31 @@
                 style="width: 3806px; height: 206.766px; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px)"
               >
                 <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
-                  <a href="#"
+                  <a href="/company.detail.html"
                     ><div class="slider_item">
                       <img
                         class="review_logo"
-                        src="./images/tata-group.jpg"
+                        src="./images/mismart.png"
                         alt="logo_company"/>
                       <div class="rev_user">
                         <img
-                          src="./images/unnamed.jpg"
+                          src="./images/avt01.jpg"
                           class="user_pic"/>
                         <div class="user_details">
-                          <div class="user_name">Tiến sĩ Santosh Kumar (Nhân viên hiện tại)</div>
-                          <div class="user_profile">Liên kết kho, Giám sát kho</div>
+                          <div class="user_name">Thiên Phú (Nhân viên hiện tại)</div>
+                          <div class="user_profile">Software Engineer</div>
                         </div>
                       </div>
                       <div class="review_details_wrap">
                         <div class="review_details">
-                          <b>Thích:</b> Tôi không làm việc ở Tata Co. Nhưng một số người và gia đình tôi đã nói với công
-                          ty tốt nhất ở Ấn Độ Vì vậy, tôi muốn tham gia vào Tập đoàn Tata này của các công ty bất kỳ công việc bất cứ nơi
-                          nào pls gửi tôi trong công ty này cho bất kỳ công việc này mục tiêu của tôi.
+                          <b>Thích: </b>Đồng nghiệp thân thiện, thời gian thoải mái.
                         </div>
                         <div class="review_details">
-                          <b>Không thích:</b> Không có gì là không thích.
+                          <b>Không thích: </b>Nằm ở xa trung tâm.
                         </div>
                       </div>
                       <div class="review_footer">
-                        <div class="rate-wrap" title="Overall Rating 4">
+                        <div class="rate-wrap" >
                           <div class="star-wrap">
                             <div class="rated-stars" style="width: 79.6%">
                               <i class="icon-star"></i>
@@ -141,7 +140,7 @@
                               <i class="icon-star"></i>
                             </div>
                           </div>
-                          <span class="review_counts">(64k Đánh giá)</span>
+                          <span class="review_counts">(2k Đánh giá)</span>
                         </div>
                         <div>
                           <span
@@ -155,33 +154,31 @@
                   </a>
                 </li>
                 <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
-                    <a href="#"
+                    <a href="/company.detail.html"
                       ><div class="slider_item">
                         <img
                           class="review_logo"
-                          src="./images/tata-group.jpg"
+                          src="./images/fpt.png"
                           alt="logo_company"/>
                         <div class="rev_user">
                           <img
-                            src="./images/unnamed.jpg"
+                            src="./images/avt02.jpg"
                             class="user_pic"/>
                           <div class="user_details">
-                            <div class="user_name">Tiến sĩ Santosh Kumar (Nhân viên hiện tại)</div>
-                            <div class="user_profile">Liên kết kho, Giám sát kho</div>
+                            <div class="user_name">Thanh Sơn (Nhân viên hiện tại)</div>
+                            <div class="user_profile">Project Manager</div>
                           </div>
                         </div>
                         <div class="review_details_wrap">
                           <div class="review_details">
-                            <b>Thích:</b> Tôi không làm việc ở Tata Co. Nhưng một số người và gia đình tôi đã nói với công
-                            ty tốt nhất ở Ấn Độ Vì vậy, tôi muốn tham gia vào Tập đoàn Tata này của các công ty bất kỳ công việc bất cứ nơi
-                            nào pls gửi tôi trong công ty này cho bất kỳ công việc này mục tiêu của tôi.
+                            <b>Thích: </b>Môi trường năng động, được tiếp xúc và học hỏi nhiều với các đối tác nước ngoài. Đội HR đông đảo và hơi bị xinh.
                           </div>
                           <div class="review_details">
-                            <b>Không thích:</b> Không có gì là không thích.
+                            <b>Không thích: </b> Tuyển người liên tục nên nhân lực bị thiếu chuyên môn.
                           </div>
                         </div>
                         <div class="review_footer">
-                          <div class="rate-wrap" title="Overall Rating 4">
+                          <div class="rate-wrap" >
                             <div class="star-wrap">
                               <div class="rated-stars" style="width: 79.6%">
                                 <i class="icon-star"></i>
@@ -198,7 +195,7 @@
                                 <i class="icon-star"></i>
                               </div>
                             </div>
-                            <span class="review_counts">(64k Đánh giá)</span>
+                            <span class="review_counts">(3k Đánh giá)</span>
                           </div>
                           <div>
                             <span
@@ -212,33 +209,31 @@
                     </a>
                   </li>
                   <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
-                    <a href="#"
+                    <a href="/company.detail.html"
                       ><div class="slider_item">
                         <img
                           class="review_logo"
-                          src="./images/tata-group.jpg"
+                          src="./images/basketball.png"
                           alt="logo_company"/>
                         <div class="rev_user">
                           <img
-                            src="./images/unnamed.jpg"
+                            src="./images/avt03.png"
                             class="user_pic"/>
                           <div class="user_details">
-                            <div class="user_name">Tiến sĩ Santosh Kumar (Nhân viên hiện tại)</div>
-                            <div class="user_profile">Liên kết kho, Giám sát kho</div>
+                            <div class="user_name">Quang Tuyến (Nhân viên hiện tại)</div>
+                            <div class="user_profile">Software Engineer</div>
                           </div>
                         </div>
                         <div class="review_details_wrap">
                           <div class="review_details">
-                            <b>Thích:</b> Tôi không làm việc ở Tata Co. Nhưng một số người và gia đình tôi đã nói với công
-                            ty tốt nhất ở Ấn Độ Vì vậy, tôi muốn tham gia vào Tập đoàn Tata này của các công ty bất kỳ công việc bất cứ nơi
-                            nào pls gửi tôi trong công ty này cho bất kỳ công việc này mục tiêu của tôi.
+                            <b>Thích :</b>Ở trung tâm thành phố, thuận tiện cho việc đi lại.
                           </div>
                           <div class="review_details">
-                            <b>Không thích:</b> Không có gì là không thích.
+                            <b>Không thích :</b>Giờ giấc nghiêm ngặt.
                           </div>
                         </div>
                         <div class="review_footer">
-                          <div class="rate-wrap" title="Overall Rating 4">
+                          <div class="rate-wrap" >
                             <div class="star-wrap">
                               <div class="rated-stars" style="width: 79.6%">
                                 <i class="icon-star"></i>
@@ -255,7 +250,172 @@
                                 <i class="icon-star"></i>
                               </div>
                             </div>
-                            <span class="review_counts">(64k Đánh giá)</span>
+                            <span class="review_counts">(3k Đánh giá)</span>
+                          </div>
+                          <div>
+                            <span
+                              href="#"
+                              class="review_link"
+                              >Xem Chi tiết</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                    <a href="/company.detail.html"
+                      ><div class="slider_item">
+                        <img
+                          class="review_logo"
+                          src="./images/sunhouse.jpg"
+                          alt="logo_company"/>
+                        <div class="rev_user">
+                          <img
+                            src="./images/avt04.jpg"
+                            class="user_pic"/>
+                          <div class="user_details">
+                            <div class="user_name">Văn Nhanh (Nhân viên hiện tại)</div>
+                            <div class="user_profile">Software Engineer</div>
+                          </div>
+                        </div>
+                        <div class="review_details_wrap">
+                          <div class="review_details">
+                            <b>Thích :</b>Môi trường làm việc tốt, trẻ trung, năng động
+                          </div>
+                          <div class="review_details">
+                            <b>Không thích: </b>Lầu cao, đi thang máy hơi tốn thời gian.
+                          </div>
+                        </div>
+                        <div class="review_footer">
+                          <div class="rate-wrap" >
+                            <div class="star-wrap">
+                              <div class="rated-stars" style="width: 79.6%">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                              </div>
+                              <div class="plain-stars">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                              </div>
+                            </div>
+                            <span class="review_counts">(2k Đánh giá)</span>
+                          </div>
+                          <div>
+                            <span
+                              href="#"
+                              class="review_link"
+                              >Xem Chi tiết</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                    <a href="/company.detail.html"
+                      ><div class="slider_item">
+                        <img
+                          class="review_logo"
+                          src="./images/samsung.webp"
+                          alt="logo_company"/>
+                        <div class="rev_user">
+                          <img
+                            src="./images/avt05.jpg"
+                            class="user_pic"/>
+                          <div class="user_details">
+                            <div class="user_name">Duy Nam (Nhân viên hiện tại)</div>
+                            <div class="user_profile">Software Engineer</div>
+                          </div>
+                        </div>
+                        <div class="review_details_wrap">
+                          <div class="review_details">
+                            <b>Thích: </b>Bãi đỗ xe rộng rãi, văn phòng đẹp nhiều tiện nghi.
+                          </div>
+                          <div class="review_details">
+                            <b>Không thích: </b> Giờ giấc chưa được linh hoạt.
+                          </div>
+                        </div>
+                        <div class="review_footer">
+                          <div class="rate-wrap" >
+                            <div class="star-wrap">
+                              <div class="rated-stars" style="width: 79.6%">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                              </div>
+                              <div class="plain-stars">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                              </div>
+                            </div>
+                            <span class="review_counts">(4k Đánh giá)</span>
+                          </div>
+                          <div>
+                            <span
+                              href="#"
+                              class="review_link"
+                              >Xem Chi tiết</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                    <a href="/company.detail.html"
+                      ><div class="slider_item">
+                        <img
+                          class="review_logo"
+                          src="./images/vng2.png"
+                          alt="logo_company"/>
+                        <div class="rev_user">
+                          <img
+                            src="./images/avt06.jpg"
+                            class="user_pic"/>
+                          <div class="user_details">
+                            <div class="user_name">Công Minh (Nhân viên hiện tại)</div>
+                            <div class="user_profile">Software Engineer</div>
+                          </div>
+                        </div>
+                        <div class="review_details_wrap">
+                          <div class="review_details">
+                            <b>Thích: </b>Môi trường làm việc chuyên nghiệp, đồng nghiệp nhiệt tình, công ty hiện đại.
+                          </div>
+                          <div class="review_details">
+                            <b>Không thích: </b>Điều kiện đầu vào khó khăn.
+                          </div>
+                        </div>
+                        <div class="review_footer">
+                          <div class="rate-wrap" >
+                            <div class="star-wrap">
+                              <div class="rated-stars" style="width: 79.6%">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                              </div>
+                              <div class="plain-stars">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                              </div>
+                            </div>
+                            <span class="review_counts">(2k Đánh giá)</span>
                           </div>
                           <div>
                             <span
@@ -286,10 +446,10 @@
           <div class="titleCont">
             <h2 class="section_heading">Lương công ty</h2>
             <p class="section_subheading">
-              Tìm kiếm và so sánh mức lương trung bình theo công ty, chức danh công việc và kinh nghiệm.
+              Tìm kiếm và so sánh mức lương trung bình theo ngành nghề.
             </p>
           </div>
-          <a href="#" class="section_view_all" title="View all salaries">Xem tất cả</a>
+          <a href="#" class="section_view_all" >Xem tất cả</a>
         </div>
         <div class="slider_wrap">
           <div class="lSSlideOuter">
@@ -298,24 +458,38 @@
                 <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
                   <div class="slider_item">
                     <div class="salary_wrap">
-                      <img
-                        class="review_logo"
-                        src="./images/amazon.jpg"
-                        alt="Logo Amazon"
-                      />
                       <div class="salary_profile_wrap">
                         <a href="#">
-                          <div class="salary_profile">Sr. Compliance Associate</div>
+                          <div class="salary_profile">Nhân viên kế toán</div>
                         </a>
-                        <div class="salary_count">(214 lương)</div>
+                        <div class="salary_count">(652 lượt chia sẻ)</div>
                       </div>
                     </div>
                     <div class="salary_range">
-                      <div class="avg_value" style="padding-left: 40%">₹ 5.3L</div>
+                      <div class="avg_value" style="padding-left: 40%">12 triệu VNĐ</div>
                       <div class="salary_bar"><div class="avg_indicator" style="left: 52%"></div></div>
                       <div class="salary_value">
-                        <span class="min_value"> ₹ 4L </span>
-                        <span class="max_value"> ₹ 6.5L </span>
+                        <span class="min_value"> 8 triệu VNĐ </span>
+                        <span class="max_value"> 16 triệu VNĐ </span>
+                      </div>
+                    </div>
+                  </div>
+                </li><li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                  <div class="slider_item">
+                    <div class="salary_wrap">
+                      <div class="salary_profile_wrap">
+                        <a href="#">
+                          <div class="salary_profile">Quản lý nhân sự</div>
+                        </a>
+                        <div class="salary_count">(297 lượt chia sẻ)</div>
+                      </div>
+                    </div>
+                    <div class="salary_range">
+                      <div class="avg_value" style="padding-left: 40%">13 triệu VNĐ</div>
+                      <div class="salary_bar"><div class="avg_indicator" style="left: 52%"></div></div>
+                      <div class="salary_value">
+                        <span class="min_value"> 7 triệu VNĐ </span>
+                        <span class="max_value"> 19 triệu VNĐ </span>
                       </div>
                     </div>
                   </div>
@@ -323,24 +497,19 @@
                 <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
                   <div class="slider_item">
                     <div class="salary_wrap">
-                      <img
-                        class="review_logo"
-                        src="./images/amazon.jpg"
-                        alt="Logo Amazon"
-                      />
                       <div class="salary_profile_wrap">
                         <a href="#">
-                          <div class="salary_profile">Sr. Compliance Associate</div>
+                          <div class="salary_profile">Dịch vụ khách hàng</div>
                         </a>
-                        <div class="salary_count">(214 lương)</div>
+                        <div class="salary_count">(325 lượt chia sẻ)</div>
                       </div>
                     </div>
                     <div class="salary_range">
-                      <div class="avg_value" style="padding-left: 40%">₹ 5.3L</div>
+                      <div class="avg_value" style="padding-left: 40%">14 triệu VNĐ</div>
                       <div class="salary_bar"><div class="avg_indicator" style="left: 52%"></div></div>
                       <div class="salary_value">
-                        <span class="min_value"> ₹ 4L </span>
-                        <span class="max_value"> ₹ 6.5L </span>
+                        <span class="min_value"> 9 triệu VNĐ </span>
+                        <span class="max_value"> 19 triệu VNĐ </span>
                       </div>
                     </div>
                   </div>
@@ -348,24 +517,59 @@
                 <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
                   <div class="slider_item">
                     <div class="salary_wrap">
-                      <img
-                        class="review_logo"
-                        src="./images/amazon.jpg"
-                        alt="Logo Amazon"
-                      />
                       <div class="salary_profile_wrap">
                         <a href="#">
-                          <div class="salary_profile">Sr. Compliance Associate</div>
+                          <div class="salary_profile">Nhân viên bán hàng</div>
                         </a>
-                        <div class="salary_count">(214 lương)</div>
+                        <div class="salary_count">(123 lượt chia sẻ)</div>
                       </div>
                     </div>
                     <div class="salary_range">
-                      <div class="avg_value" style="padding-left: 40%">₹ 5.3L</div>
+                      <div class="avg_value" style="padding-left: 40%">15 triệu VNĐ</div>
                       <div class="salary_bar"><div class="avg_indicator" style="left: 52%"></div></div>
                       <div class="salary_value">
-                        <span class="min_value"> ₹ 4L </span>
-                        <span class="max_value"> ₹ 6.5L </span>
+                        <span class="min_value"> 10 triệu VNĐ </span>
+                        <span class="max_value"> 20 triệu VNĐ </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                  <div class="slider_item">
+                    <div class="salary_wrap">
+                      <div class="salary_profile_wrap">
+                        <a href="#">
+                          <div class="salary_profile">Marketing</div>
+                        </a>
+                        <div class="salary_count">(356 lượt chia sẻ)</div>
+                      </div>
+                    </div>
+                    <div class="salary_range">
+                      <div class="avg_value" style="padding-left: 40%">15 triệu VNĐ</div>
+                      <div class="salary_bar"><div class="avg_indicator" style="left: 52%"></div></div>
+                      <div class="salary_value">
+                        <span class="min_value"> 10 triệu VNĐ </span>
+                        <span class="max_value"> 20 triệu VNĐ </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                  <div class="slider_item">
+                    <div class="salary_wrap">
+                      <div class="salary_profile_wrap">
+                        <a href="#">
+                          <div class="salary_profile">IT - Phầm mềm</div>
+                        </a>
+                        <div class="salary_count">(472 lượt chia sẻ)</div>
+                      </div>
+                    </div>
+                    <div class="salary_range">
+                      <div class="avg_value" style="padding-left: 40%">20 triệu VNĐ</div>
+                      <div class="salary_bar"><div class="avg_indicator" style="left: 52%"></div></div>
+                      <div class="salary_value">
+                        <span class="min_value"> 12 triệu VNĐ </span>
+                        <span class="max_value"> 28 triệu VNĐ </span>
                       </div>
                     </div>
                   </div>
@@ -388,7 +592,7 @@
           <div class="titleCont">
             <h2 class="section_heading">Công việc</h2>
             <p class="section_subheading">
-              Khám phá công việc trên khắp Ấn Độ và biết về mức lương của công ty, đánh giá của nhân viên, phỏng vấn và lợi ích.
+              Khám phá công việc trên khắp Việt Nam
             </p>
           </div>
           <a href="#" class="section_view_all">Xem tất cả</a>
@@ -400,26 +604,82 @@
                 <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
                   <div class="slider_item job_card">
                     <div class="logo_cont">
-                      <img class="logo" src="./images/accenture.jpg" alt=" logo"/>
+                      <img class="logo" src="./images/toshiba.png" alt=" logo"/>
                     </div>
                     <div class="job_profile_wrap_new">
                       <div class="job_profile_name" >
-                        Ứng dụng Lead <span >tại Accenture Solutions Pvt Ltd</span>
+                        Senior Java Engineer <span >tại Toshiba Software Development Co.,Ltd</span>
                       </div>
                       <div class="icon_locations">
                         <i class="icon icon-location1"></i>
                         <p class="job_locations">
-                          <span>Bengaluru/Bangalore</span>
+                          <span>Ba Đình, Hà Nội</span>
                           <span></span>
                         </p>
                       </div>
                       <div class="bottom_text">
                         <p class="exp_range"><i class="icon icon-work"></i>
-                          <span >8-10 Yrs</span>
+                          <span >3 năm</span>
                         </p>
                         <p class="sal_range">
                           <i class="icon icon-wallet"></i>
-                          <span>Không được tiết lộ</span>
+                          <span>Lên đến 60 triệu</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                  <div class="slider_item job_card">
+                    <div class="logo_cont">
+                      <img class="logo" src="./images/stavian.png" alt=" logo"/>
+                    </div>
+                    <div class="job_profile_wrap_new">
+                      <div class="job_profile_name" >
+                        Chuyên Viên Phát Triển Phần Mềm <span >tại Stavian Chemical</span>
+                      </div>
+                      <div class="icon_locations">
+                        <i class="icon icon-location1"></i>
+                        <p class="job_locations">
+                          <span>Hoàn Kiếm, Hà Nội</span>
+                          <span></span>
+                        </p>
+                      </div>
+                      <div class="bottom_text">
+                        <p class="exp_range"><i class="icon icon-work"></i>
+                          <span >3 năm</span>
+                        </p>
+                        <p class="sal_range">
+                          <i class="icon icon-wallet"></i>
+                          <span>Thương lượng</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                  <div class="slider_item job_card">
+                    <div class="logo_cont">
+                      <img class="logo" src="./images/lxpantos.png" alt=" logo"/>
+                    </div>
+                    <div class="job_profile_wrap_new">
+                      <div class="job_profile_name" >
+                        Hoàn Kiếm, Hà Nội <span >tại LX Pantos Vietnam</span>
+                      </div>
+                      <div class="icon_locations">
+                        <i class="icon icon-location1"></i>
+                        <p class="job_locations">
+                          <span>Hoàn Kiếm, Hà Nội</span>
+                          <span></span>
+                        </p>
+                      </div>
+                      <div class="bottom_text">
+                        <p class="exp_range"><i class="icon icon-work"></i>
+                          <span >3-5 năm</span>
+                        </p>
+                        <p class="sal_range">
+                          <i class="icon icon-wallet"></i>
+                          <span>Thương lượng</span>
                         </p>
                       </div>
                     </div>
@@ -432,22 +692,22 @@
                     </div>
                     <div class="job_profile_wrap_new">
                       <div class="job_profile_name" >
-                        Ứng dụng Lead <span >tại Accenture Solutions Pvt Ltd</span>
+                        Chuyên Viên Kế Toán - Nữ <span >tại Công Ty Cổ Phần Cơ Khí Xây Dựng Đại Mỗ</span>
                       </div>
                       <div class="icon_locations">
                         <i class="icon icon-location1"></i>
                         <p class="job_locations">
-                          <span>Bengaluru/Bangalore</span>
+                          <span>Hà Nội</span>
                           <span></span>
                         </p>
                       </div>
                       <div class="bottom_text">
                         <p class="exp_range"><i class="icon icon-work"></i>
-                          <span >8-10 Yrs</span>
+                          <span >3-5 năm</span>
                         </p>
                         <p class="sal_range">
                           <i class="icon icon-wallet"></i>
-                          <span>Không được tiết lộ</span>
+                          <span>Thương lượng</span>
                         </p>
                       </div>
                     </div>
@@ -456,26 +716,110 @@
                 <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
                   <div class="slider_item job_card">
                     <div class="logo_cont">
-                      <img class="logo" src="./images/accenture.jpg" alt=" logo"/>
+                      <img class="logo" src="./images/acter.png" alt=" logo"/>
                     </div>
                     <div class="job_profile_wrap_new">
                       <div class="job_profile_name" >
-                        Ứng dụng Lead <span >tại Accenture Solutions Pvt Ltd</span>
+                        Trợ Lý Phiên Dịch Tiếng Trung <span >tại Công Ty TNHH Công Nghệ Công Trình Sheng Huei</span>
                       </div>
                       <div class="icon_locations">
                         <i class="icon icon-location1"></i>
                         <p class="job_locations">
-                          <span>Bengaluru/Bangalore</span>
+                          <span>Hà Nam</span>
                           <span></span>
                         </p>
                       </div>
                       <div class="bottom_text">
                         <p class="exp_range"><i class="icon icon-work"></i>
-                          <span >8-10 Yrs</span>
+                          <span>Không yêu cầu</span>
                         </p>
                         <p class="sal_range">
                           <i class="icon icon-wallet"></i>
-                          <span>Không được tiết lộ</span>
+                          <span>10-15 triệu</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                  <div class="slider_item job_card">
+                    <div class="logo_cont">
+                      <img class="logo" src="./images/ilsung.png" alt=" logo"/>
+                    </div>
+                    <div class="job_profile_wrap_new">
+                      <div class="job_profile_name" >
+                        rợ Lý Phiên Dịch Tiếng Trung <span >tại Công Ty TNHH IlSung Việt Nam</span>
+                      </div>
+                      <div class="icon_locations">
+                        <i class="icon icon-location1"></i>
+                        <p class="job_locations">
+                          <span>Bình Giang, Hải Dương</span>
+                          <span></span>
+                        </p>
+                      </div>
+                      <div class="bottom_text">
+                        <p class="exp_range"><i class="icon icon-work"></i>
+                          <span>Không yêu cầu</span>
+                        </p>
+                        <p class="sal_range">
+                          <i class="icon icon-wallet"></i>
+                          <span>Thương lượng</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                  <div class="slider_item job_card">
+                    <div class="logo_cont">
+                      <img class="logo" src="./images/add.png" alt=" logo"/>
+                    </div>
+                    <div class="job_profile_wrap_new">
+                      <div class="job_profile_name" >
+                        Nhân Viên Kinh Doanh/ Sales Executive <span >tại Công Ty TNHH Thương Mại Dịch Vụ ADD</span>
+                      </div>
+                      <div class="icon_locations">
+                        <i class="icon icon-location1"></i>
+                        <p class="job_locations">
+                          <span>Thủ Đức, TP.HCM</span>
+                          <span></span>
+                        </p>
+                      </div>
+                      <div class="bottom_text">
+                        <p class="exp_range"><i class="icon icon-work"></i>
+                          <span >1-2 năm</span>
+                        </p>
+                        <p class="sal_range">
+                          <i class="icon icon-wallet"></i>
+                          <span>Thương lượng</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                  <div class="slider_item job_card">
+                    <div class="logo_cont">
+                      <img class="logo" src="./images/bkav.png" alt=" logo"/>
+                    </div>
+                    <div class="job_profile_wrap_new">
+                      <div class="job_profile_name" >
+                        Chuyên Viên Phát Triển Kinh Doanh B2B <span >tại Công Ty Cổ Phần BKAV</span>
+                      </div>
+                      <div class="icon_locations">
+                        <i class="icon icon-location1"></i>
+                        <p class="job_locations">
+                          <span>Gò Vấp, TP. HCM</span>
+                          <span></span>
+                        </p>
+                      </div>
+                      <div class="bottom_text">
+                        <p class="exp_range"><i class="icon icon-work"></i>
+                          <span >2 năm</span>
+                        </p>
+                        <p class="sal_range">
+                          <i class="icon icon-wallet"></i>
+                          <span>Thương lượng</span>
                         </p>
                       </div>
                     </div>
@@ -497,97 +841,69 @@
       <div class="home_reviews">
         <div class="section_heading_wrap">
           <div class="titleCont">
-            <h2 class="section_heading" >Hơn 493.000 công ty</h2>
+            <h2 class="section_heading" >Hơn 10.000 công ty</h2>
             <p class="section_subheading" >
               Tìm hiểu thông tin chuyên sâu về các công ty. Biết về sứ mệnh, tầm nhìn, sản phẩm, dịch vụ của họ và nhiều hơn nữa.
             </p>
           </div>
-          <a href="#" class="section_view_all" title="View all companies">
+          <a href="#" class="section_view_all" >
             Xem tất cả
           </a>
         </div>
         <div id="companiesWrap">
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/jt.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
-          </div>
-          <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
-          </div>
-          <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
-          </div>
-          <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
-          </div>
-          <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
-          </div>
-          <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
-          </div>
-          <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
-          </div>
-          <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/tiki.png" alt="logo" /></a>
           </div><div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/momo.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/vin.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/vng.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/gameloft.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/netlink.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/kms.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/apple.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/pepsi.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/misa.jpg" alt="logo" /></a>
           </div><div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/lg.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/intel.png" alt="logo" /></a>
           </div>
           <div class="company_item">
-            <a href="#" title="Tata Group">
-              <img class="company_logo" src="./images/tata-group.jpg" alt="logo" /></a>
+            <a href="#">
+              <img class="company_logo" src="./images/coccoc.png" alt="logo" /></a>
           </div>
         </div>
       </div>
@@ -595,7 +911,7 @@
     <section class="ambox_branding_wrap">
       <div class="ambox_branding_content_wrap">
         <div class="ambox_branding_content">
-          <p class="ambox_branding_title">Tại sao Cộng đồng AppName</p>
+          <p class="ambox_branding_title">Lý do bạn nên chọn JobsReview</p>
           <div class="ambox_features_wrap">
             <div class="ambox_feature">
               <span class="icon-Star-icon"></span>
@@ -617,55 +933,12 @@
               <span class="icon-Know-inside-culture-icon">
                 <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
               </span>
-              <p class="ambox_feature_title">Biết bên trong văn hóa</p>
+              <p class="ambox_feature_title">Hiểu về văn hóa công ty</p>
               <span class="ambox_feature_text">
-                Đọc đánh giá và chuẩn bị cho các cuộc phỏng vấn được chia sẻ bởi nhân viên và biết văn hóa bên trong.</span>
+                Đọc đánh giá và chuẩn bị cho các cuộc phỏng vấn được chia sẻ bởi nhân viên và biết về văn hóa bên trong công ty.</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="tool_wrap">
-      <div class="page-wrap">
-        <section class="ambox_tool_wrap">
-          <div class="ambox_tool_content_wrap">
-            <div class="ambox_tools_content">
-              <div class="icon_circle_wrap">
-                <div class="icon_circle"><i class="icon-Prac-test-icon"></i></div>
-              </div>
-              <div class="ambox_tool_text_wrap">
-                <p class="ambox_tool_title">Kiểm tra thực hành</p>
-                <span class="ambox_tool_text">
-                  Thực hành các câu hỏi năng khiếu được hỏi trong các cuộc phỏng vấn.</span
-                >
-                <p class="link">
-                  <a href="#">
-                    Câu hỏi thực hành</a
-                  >&nbsp; <i class="icon-right-arrow"></i>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          class="ambox_tool_wrap mobile_fix"
-          style="border: none">
-          <div class="ambox_tool_content_wrap">
-            <div class="ambox_tools_content" style="float: right">
-              <div class="icon_circle_wrap">
-                <div class="icon_circle"><i class="icon-Salary-cal-icon"></i></div>
-              </div>
-              <div class="ambox_tool_text_wrap">
-                <p class="ambox_tool_title">Máy tính lương</p>
-                <span class="ambox_tool_text">Tính toán mức lương trực tiếp của bạn với công cụ của chúng tôi.</span>
-                <p class="link">
-                  <a href="#">Máy tính lương</a>&nbsp;
-                  <i class="icon-right-arrow"></i>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </section>
     <section class="login-popup" id="loginPopup">
@@ -705,7 +978,7 @@
                   <span>Tôi đã đọc và đồng ý với 
                     <a href="#">hướng dẫn cộng đồng</a>,
                     <a href="#">điều khoản sử dụng</a> và
-                    <a href="#">chính sách bảo mật</a> của AppName.com.
+                    <a href="#">chính sách bảo mật</a> của JobsReview.com.
                   </span>
                 </label>
             </div>
@@ -723,33 +996,12 @@
       <div class="footer_links_content">
         <div class="info">
           <div class="logo_wrap">
-            <img src="./images/logo.svg"/>
-            <span class="logo_text">AppName</span>
-          </div>
-          <p class="title" >
-            Giúp hơn 57 người tìm việc mỗi tháng trong việc lựa chọn công ty phù hợp của họ
-          </p>
-          <div class="col" id="amboxStats">
-            <div class="item">
-              <span >100</span>
-              <p>Đánh giá</p>
-            </div>
-            <div class="item">
-              <span>120+</span>
-              <p>Tiền lương</p>
-            </div>
-            <div class="item">
-              <span>200+</span>
-              <p>Cuộc phỏng vấn</p>
-            </div>
-            <div class="item">
-              <span>57</span>
-              <p>Người dùng/Tháng</p>
-            </div>
+            <img src="./images/app.png" style="width: 100px; height: 100px;"/>
+            <span class="logo_text">JobsReview</span>
           </div>
         </div>
         <div class="quick_links_wrap">
-          <p>Người dùng/Người tìm việc</p>
+          <p>Người dùng</p>
           <div class="quick_links">
             <div class="quick_link">
               <a href="#">Công ty</a>
@@ -761,24 +1013,12 @@
               <a href="#">Tiền lương</a>
             </div>
             <div class="quick_link">
-              <a href="#">Jobs</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Cuộc phỏng vấn</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Nơi làm việc tốt nhất 2021</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Máy tính lương</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Kiểm tra thực hành</a>
+              <a href="#">Công việc</a>
             </div>
           </div>
         </div>
         <div class="quick_links_wrap">
-          <p>Hộp tham vọng</p>
+          <p>JobsReview</p>
           <div class="quick_links">
             <div class="quick_link">
               <a href="#">Về chúng tôi</a>
@@ -855,10 +1095,10 @@
           </div>
           <p>Đóng góp</p>
           <a href="#">
-            <button class="btn">Viết Đánh giá</button>
+            <button class="btn">Viết bài đánh giá</button>
           </a>
           <a href="#">
-            <button class="btn">Thêm tiền lương</button>
+            <button class="btn">Chia sẻ về tiền lương</button>
           </a>
         </div>
       </div>
