@@ -361,6 +361,7 @@ a.text {
     font-size: 0.75rem;
     justify-content: center;
     margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 #abh_info .header-col-right .engaged-employer .tooltiptext {
@@ -872,6 +873,7 @@ a.text {
     font-size: 0.75rem;
     justify-content: center;
     margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 #abh_info .header-col-right .engaged-employer .tooltiptext {
@@ -1326,7 +1328,6 @@ a.text {
 }
 .container,
 .container-two-col {
-  width: 100%;
   max-width: 64rem;
   margin: 0 auto;
 }
@@ -1592,7 +1593,7 @@ a.text {
   padding-right: 3.625rem;
   padding-left: 0;
   border-right: 1px solid #ebf0f6;
-  margin-right: 3.625rem;
+  margin-right: 1.625rem;
 }
 @media only screen and (max-width: 768px) {
   .ab_comp_rating_card .flex-wrap .overall-wrap {
