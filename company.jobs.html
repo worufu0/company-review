@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en" class="" style="--vh: 6.67px">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tìm công việc | JobsReview</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/fav.png" />
+    <link rel="preload" href="./fonts/400.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/700.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/600.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/500.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/icomoon.woff2" as="font" type="font/woff2" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/company.detail.css" />
+    <link rel="stylesheet" href="./styles/lightslider.min.css" />
+    <!-- <link rel="stylesheet" href="./styles/blog.css" />
+    <link rel="stylesheet" href="./styles/review.css" /> -->
+    <link rel="stylesheet" href="./styles/company.jobs.css" />
+</head>
+
+<body>
+    <div class="sliding-sticky-menu" id="headerWrapper">
+        <nav class="main-menu desktop blue-menu">
+            <nav class="left-section">
+                <a href="/" class="logo_name">
+                    <img src="./images/app.png" height="100" width="100" alt="app_name" />
+                    JobsReview
+                </a>
+                <a href="https://localhost:5000/companies.html"> Công ty </a>
+                <a href="https://localhost:5000/reviews.html">Đánh giá </a>
+                <a href="https://localhost:5000/salaries.html">Tiền lương</a>
+            </nav>
+            <div class="right-section">
+                <a onclick="loginPopUp();" href="javascript:void(0);" class="login not-logged-in login-text">Đăng
+                    nhập</a>
+                <div class="border-right icon-tag">
+                    <span onclick="toggleNotification();" id="notificationBell" href="javascript:void(0);">
+                        <img id="bell-icon" src="./images/bell-icon.svg" width="14" height="16" alt="bell" /><span
+                            id="notification-count" class="badge" style="display: none">
+                </div>
+            </div>
+        </nav>
+        <section class="cover_image_wrap">
+            <div class="cover_image_content_wrap page-wrap"
+                style="background-image: url('./images/buildings.svg'); padding: 3.75rem 0 3rem">
+                <div class="cover_image_content">
+                    <h1 itemprop="headline">
+                        Tìm kiếm công việc phù hợp
+                    </h1>
+                </div>
+                <div class="search_new">
+                    <form id="homeSearch" class="searchForm">
+                        <span class="twitter-typeahead" style="position: relative; display: inline-block; width: 457px">
+                            <input class="search_company_input js-menu-search tt-input" type="text"
+                                placeholder="FPT SOFTWARE" style="position: relative; vertical-align: top">
+                        </span>
+
+                        <div class="search-button">
+                            <input type="submit" class="blue-btn-small" value="Tìm kiếm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div id="jobsList" data-v-178de0c0="" class="">
+            <div id="filters-padder" class="ab_comp_job_filters">
+                <div id="filters-row" class="desktop-filters filters-wrap stickFiltersUp">
+                    <div class="container desk-cont">
+                        <div class="show-flex">
+                            <p class="filter-by"><img src="https://static.ambitionbox.com/static/icons/filter.svg"
+                                    alt=""> <span>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Lọc công việc theo</font>
+                                    </font>
+                                </span></p>
+                            <div class="filter-item">
+                                <div title="Phòng ban" class="fitler-text">
+                                    <p class="body-medium text-capitalize undefined">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">
+                                                Phòng ban
+                                            </font>
+                                        </font>
+                                    </p> <i class="icon-chevron-right"></i>
+                                </div>
+                                <div class="filter-data undefined" style="display: none;">
+                                    <div data-v-83085c40="" class="radioList-wrapper filter"
+                                        show-all-items-at-once="true" heading="Select Department" name="departments"
+                                        hide-count="true" radio-list="[object Object]" pre-filled=""
+                                        search-config="[object Object]">
+                                        <div data-v-83085c40="" class="header">
+                                            <p data-v-83085c40="" class="heading">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Chọn bộ phận</font>
+                                                </font>
+                                            </p>
+                                            <!---->
+                                        </div>
+                                        <div data-v-83085c40="" class="searchbox"><i data-v-83085c40=""
+                                                class="icon-search search-icon"></i> <input data-v-83085c40=""
+                                                type="text" placeholder="Tìm kiếm các phòng ban"></div>
+                                        <div data-v-83085c40=""
+                                            style="height: 100%; overflow-y: auto; max-height: 224px;">
+                                            <div role="group" class="radiolist" style="padding: 0px;">
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="departments_101" name="departments"
+                                                            data="101" class="custom-radio"> <label data-v-415f8a52=""
+                                                            for="departments_101" class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    Phần mềm / Thử nghiệm / Mạng
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 0px;"></div>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <div title="Vị trí" class="fitler-text">
+                                    <p class="body-medium text-capitalize undefined">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">
+                                                Vị trí
+                                            </font>
+                                        </font>
+                                    </p> <i class="icon-chevron-right"></i>
+                                </div>
+                                <div class="filter-data undefined" style="display: none;">
+                                    <div data-v-83085c40="" class="radioList-wrapper filter"
+                                        show-all-items-at-once="true" heading="Select Location" name="location"
+                                        hide-count="true" radio-list="[object Object]" pre-filled=""
+                                        search-config="[object Object]">
+                                        <div data-v-83085c40="" class="header">
+                                            <p data-v-83085c40="" class="heading">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Chọn địa điểm</font>
+                                                </font>
+                                            </p>
+                                            <!---->
+                                        </div>
+                                        <div data-v-83085c40="" class="searchbox"><i data-v-83085c40=""
+                                                class="icon-search search-icon"></i> <input data-v-83085c40=""
+                                                type="text" placeholder="Tìm kiếm địa điểm"></div>
+                                        <div data-v-83085c40=""
+                                            style="height: 100%; overflow-y: auto; max-height: 224px;">
+                                            <div role="group" class="radiolist" style="padding: 0px;">
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="location_Hyderabad/Secunderabad"
+                                                            name="location" data="Hyderabad/Secunderabad"
+                                                            class="custom-radio"> <label data-v-415f8a52=""
+                                                            for="location_Hyderabad/Secunderabad" class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 0px;"></div>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <div title="Kinh nghiệm" class="fitler-text">
+                                    <p class="body-medium text-capitalize undefined">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">
+                                               Kinh nghiệm
+                                            </font>
+                                        </font>
+                                    </p> <i class="icon-chevron-right"></i>
+                                </div>
+                                <div class="filter-data " style="display: none;">
+                                    <div data-v-83085c40="" class="radioList-wrapper filter"
+                                        show-all-items-at-once="true" heading="Select Experience" name="exp"
+                                        hide-count="true"
+                                        radio-list="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+                                        pre-filled="" search-config="[object Object]">
+                                        <div data-v-83085c40="" class="header">
+                                            <p data-v-83085c40="" class="heading">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Chọn trải nghiệm</font>
+                                                </font>
+                                            </p>
+                                            <!---->
+                                        </div>
+                                        <!---->
+                                        <div data-v-83085c40=""
+                                            style="height: 100%; overflow-y: auto; max-height: 224px;">
+                                            <div role="group" class="radiolist" style="padding: 0px;">
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_2" name="exp" data="2"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_2"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    2 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_3" name="exp" data="3"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_3"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    3 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_4" name="exp" data="4"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_4"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    4 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_5" name="exp" data="5"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_5"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    5 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_6" name="exp" data="6"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_6"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    6 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_7" name="exp" data="7"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_7"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    7 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_8" name="exp" data="8"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_8"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    8 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_9" name="exp" data="9"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_9"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    9 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_10" name="exp" data="10"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_10"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    10 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                                <div role="listitem" class="">
+                                                    <div data-v-415f8a52="" class="radio"><input data-v-415f8a52=""
+                                                            type="radio" id="exp_11" name="exp" data="11"
+                                                            class="custom-radio"> <label data-v-415f8a52="" for="exp_11"
+                                                            class="radio-label">
+                                                            <!---->
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    Trên 10 năm
+                                                                </font>
+                                                            </font>
+                                                            <!---->
+                                                        </label></div>
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 0px;"></div>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <!---->
+                            </div>
+                            <div class="filter-item">
+                                <!---->
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+                <!---->
+                <!---->
+            </div>
+            <h1 class="container jobs-h1 bold-title-l">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                        28,682 Công việc dành cho nhà phát triển
+
+
+                    </font>
+                </font>
+            </h1>
+            <div class="container-two-col">
+                <div class="col-right">
+                    <div id="jdCont" class="jdCont">
+                        <!---->
+                        <div id="jdMetaCont" class="jdMetaInfo show-flex">
+                            <div class="logo-cont"><img
+                                    src="https://static.ambitionbox.com/alpha/company/photos/logos/fpt-india.jpg"
+                                    onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';"
+                                    width="80" height="80" alt="Logo FPT India" class="logo"></div>
+                            <div class="job-info-wrapper">
+                                <h2 class="desig bold-title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">FPT Software</font>
+                                    </font>
+                                </h2>
+                                <div class="company-info">
+                                    <div class="rating-wrapper"><a href="/reviews/fpt-india-reviews"
+                                            class="rating rating-45" title="Đánh giá 5.0"><i class="icon icon-star"></i>
+                                            <span class="body-medium">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">5.0</font>
+                                                </font>
+                                            </span></a> <a href="/reviews/fpt-india-reviews" class=""
+                                            title="Đánh giá về FPT India">
+                                            <p class="review-count caption-strong-medium">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        dựa trên 2 nhận xét
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </a></div>
+                                </div>
+                                <div class="job-basic-info show-flex">
+                                    <div class="entity"><i class="icon icon-work" style="opacity: 0.8;"></i>
+                                        <p class="body-small-l">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    2-4 năm
+                                                </font>
+                                            </font>
+                                        </p>
+                                    </div>
+                                    <!---->
+                                    <div class="entity loc"><i class="icon icon-pin-outline"></i>
+                                        <p class="body-small-l">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    
+                                                </font>
+                                            </font>
+                                            <!---->
+                                        </p>
+                                    </div>
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                 
+                        <div class="jdInfo">
+                         
+                            <h3 class="bold-title-s jdDescTitle">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Mô tả công việc
+                                    </font>
+                                </font>
+                            </h3>
+                            <div title="FPT India FPT Software - Windchill Developer - Mô tả công việc OOTB (2-4 năm)"
+                                class="ab_card jobDesc body-medium">
+                                <div class="htmlCont">
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Mô tả công việc :</font>
+                                        </font>
+                                    </p>
+                                    <p><br></p>
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Lưu ý: khách hàng đang sử dụng phiên
+                                                bản 12.0.2</font>
+                                        </font>
+                                    </p>
+                                    <p><br></p>
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Ứng viên lý tưởng sẽ có chuyên môn
+                                                về:</font>
+                                        </font>
+                                    </p>
+                                    <p><br></p>
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">- Hệ thống Windchill và quản trị kinh
+                                                doanh.</font>
+                                        </font>
+                                    </p>
+                                    <p><br></p>
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">- Kinh nghiệm thực hành và kiến
+                                                ​​thức làm việc trong các phần mở rộng và tùy chỉnh cấu hình.</font>
+                                        </font>
+                                    </p>
+                                    <p><br></p>
+                                 
+                                    
+                                </div> <br>
+                                <!---->
+                                <p><strong>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Lĩnh vực chức năng:</font>
+                                        </font>
+                                    </strong>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;"> Phần mềm / Thử nghiệm / Mạng
+                                        </font>
+                                    </font>
+                                </p> <a title="Đọc mô tả công việc đầy đủ" class="ctas-a-medium read-more-cta">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Đọc mô tả công việc đầy đủ
+                                        </font>
+                                    </font><i class="icon icon-external-link"><span class="path2"></span></i>
+                                </a>
+                                <!---->
+                            </div>
+                            <div title="Quyền lợi tại FPT India" class="ab_card ab_comp_job_bencard">
+                                <h3 class="bold-list-header card-title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Lợi ích của FPT India</font>
+                                    </font>
+                                </h3>
+                                <!---->
+                                <!---->
+                                <div class="benefits-wrap">
+                                    <div class="benefit-wrap"><img
+                                            data-src="https://static.ambitionbox.com/static/benefits/WFH.svg"
+                                            class="lazy loaded"
+                                            src="https://static.ambitionbox.com/static/benefits/WFH.svg"
+                                            data-was-processed="true"> <span class="sbold-Labels">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Làm ở nhà</font>
+                                            </font>
+                                        </span>
+                                        <!---->
+                                    </div>
+                                    <div class="benefit-wrap"><img
+                                            data-src="https://static.ambitionbox.com/static/benefits/Transportation.svg"
+                                            class="lazy loaded"
+                                            src="https://static.ambitionbox.com/static/benefits/Transportation.svg"
+                                            data-was-processed="true"> <span class="sbold-Labels">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Vận chuyển miễn phí</font>
+                                            </font>
+                                        </span>
+                                        <!---->
+                                    </div>
+                                    <div class="benefit-wrap"><img
+                                            data-src="https://static.ambitionbox.com/static/benefits/Cafeteria.svg"
+                                            class="lazy loaded"
+                                            src="https://static.ambitionbox.com/static/benefits/Cafeteria.svg"
+                                            data-was-processed="true"> <span class="sbold-Labels">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Quán cà phê</font>
+                                            </font>
+                                        </span>
+                                        <!---->
+                                    </div>
+                                    <div class="benefit-wrap"><img
+                                            data-src="https://static.ambitionbox.com/static/benefits/TeamOuting.svg"
+                                            class="lazy loaded"
+                                            src="https://static.ambitionbox.com/static/benefits/TeamOuting.svg"
+                                            data-was-processed="true"> <span class="sbold-Labels">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Đội đi chơi</font>
+                                            </font>
+                                        </span>
+                                        <!---->
+                                    </div>
+                                    <div class="benefit-wrap"><img
+                                            data-src="https://static.ambitionbox.com/static/benefits/SoftSkillsTraining.svg"
+                                            class="lazy loaded"
+                                            src="https://static.ambitionbox.com/static/benefits/SoftSkillsTraining.svg"
+                                            data-was-processed="true"> <span class="sbold-Labels">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Đào tạo kỹ năng mềm</font>
+                                            </font>
+                                        </span>
+                                        <!---->
+                                    </div>
+                                    <div class="benefit-wrap"><img
+                                            data-src="https://static.ambitionbox.com/static/benefits/InterTravel.svg"
+                                            class="lazy loaded"
+                                            src="https://static.ambitionbox.com/static/benefits/InterTravel.svg"
+                                            data-was-processed="true"> <span class="sbold-Labels">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Di dời quốc tế</font>
+                                            </font>
+                                        </span></div>
+                                </div> <a href="https://www.ambitionbox.com/benefits/fpt-india-benefits" target="_blank"
+                                    title="Lợi ích của FPT India" class="ctas-btn-medium">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Xem thêm các lợi ích</font>
+                                    </font>
+                                </a>
+                                <!---->
+                            </div>
+                            <!---->
+                            <!---->
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-left jdDesktop">
+                    <div class="jobsList">
+                        <div itemscope="itemscope" itemtype="http://schema.org/ItemList">
+                            <meta itemprop="numberOfItems" content="5">
+                            <meta itemprop="name" content="  Jobs  found for 'fpt'">
+                            <meta itemprop="url" content="https://www.ambitionbox.com/jobs/search?tag=fpt">
+                            <div itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"
+                                title="FPT Software - Nhà phát triển Windchill - OOTB (2-4 tuổi)"
+                                class="jobInfoCard active">
+                                <div class="img"><img
+                                        data-src="https://static.ambitionbox.com/alpha/company/photos/logos/fpt-india.jpg"
+                                        width="40" height="40" alt="FPT VN"
+                                        src="https://static.ambitionbox.com/alpha/company/photos/logos/fpt-india.jpg"
+                                        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                        class="logo lazy loaded" data-was-processed="true"></div>
+                                <div class="info">
+                                    <meta itemprop="position" content="1">
+                                    <meta itemprop="url"
+                                        content="https://www.ambitionbox.com/jobs/fpt-india-jobs?rid=hirist_989639">
+                                    <meta itemprop="name" content="FPT Software - Windchill Developer - OOTB (2-4 năm)">
+                                    <h2><a href="/jobs/fpt-india-jobs?rid=hirist_989639" class="title noclick">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">FPT Software - Nhà phát triển
+                                                    Windchill</font>
+                                            </font>
+                                        </a></h2>
+                                    <div class="company-info">
+                                        <p title="FPT VN" class="company body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    FPT VN
+                                                </font>
+                                            </font>
+                                        </p>
+                                        <div class="rating-wrapper"><a href="/reviews/fpt-india-reviews"
+                                                class="rating rating-45" title="Đánh giá 5.0"><i
+                                                    class="icon icon-star"></i> <span class="body-small">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">5.0</font>
+                                                    </font>
+                                                </span></a> <a href="/reviews/fpt-india-reviews"
+                                                class="review-count caption-strong-medium"
+                                                title="Đánh giá về FPT INDIA">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        (2 Nhận xét)
+                                                    </font>
+                                                </font>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="other-info">
+                                    <div class="job-basic-info show-flex">
+                                        <div title="2-4 năm" class="entity"><i class="icon icon-work"
+                                                style="opacity: 0.8;"></i>
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        2-4 năm
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                        <!---->
+                                        <div title="" class="entity loc"><i
+                                                class="icon icon-pin-outline"></i>
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        
+
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                        <div title="Windchill, Windchill PDMLink, Thiết kế giải pháp, Triển khai giải pháp, OOTB, Quản trị hệ thống, Quản lý cấu hình, Dịch vụ trang web, Tibco, Di chuyển dữ liệu"
+                                            class="entity"><img data-src="/static/icons/book.svg" width="16" height="16"
+                                                class="icon lazy loaded" src="/static/icons/book.svg"
+                                                data-was-processed="true">
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                    </div> <span class="body-small-l">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">1 tháng trước</font>
+                                        </font>
+                                    </span><span class="dot">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">·</font>
+                                        </font>
+                                    </span><span class="body-small-l">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Kiến trúc giao diện người dùng, Javascript, AngularJS +5 khác</font>
+                                        </font>
+                                    </span>
+                                </div>
+                            </div>
+                            <!---->
+                            <div itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"
+                                title="FPT Software - Nhà phát triển C ++" class="jobInfoCard">
+                                <div class="img"><img
+                                        data-src="https://static.ambitionbox.com/alpha/company/photos/logos/fpt-india.jpg"
+                                        width="40" height="40" alt="FPT VN"
+                                        src="https://static.ambitionbox.com/alpha/company/photos/logos/fpt-india.jpg"
+                                        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                        class="logo lazy loaded" data-was-processed="true"></div>
+                                <div class="info">
+                                    <meta itemprop="position" content="2">
+                                    <meta itemprop="url"
+                                        content="https://www.ambitionbox.com/jobs/fpt-india-jobs?rid=hirist_989636">
+                                    <meta itemprop="name" content="FPT Software - C++ Developer - MFC (10-15 năm)">
+                                    <h2><a href="/jobs/fpt-india-jobs?rid=hirist_989636" class="title noclick">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">FPT Software - Nhà phát triển C
+                                                    ++</font>
+                                            </font>
+                                        </a></h2>
+                                    <div class="company-info">
+                                        <p title="FPT VN" class="company body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    FPT VN
+                                                </font>
+                                            </font>
+                                        </p>
+                                        <div class="rating-wrapper"><a href="/reviews/fpt-india-reviews"
+                                                class="rating rating-45" title="Đánh giá 5.0"><i
+                                                    class="icon icon-star"></i> <span class="body-small">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">5.0</font>
+                                                    </font>
+                                                </span></a> <a href="/reviews/fpt-india-reviews"
+                                                class="review-count caption-strong-medium"
+                                                title="Đánh giá về FPT INDIA">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        (2 Nhận xét)
+                                                    </font>
+                                                </font>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="other-info">
+                                    <div class="job-basic-info show-flex">
+                                        <div title="10-15 năm" class="entity"><i class="icon icon-work"
+                                                style="opacity: 0.8;"></i>
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        10-15 năm
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                        <!---->
+                                        <div title="" class="entity loc"><i
+                                                class="icon icon-pin-outline"></i>
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        Kiến trúc giao diện người dùng, Javascript, AngularJS +5 khác
+
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                        <div title="C ++, MFC, Visual Studio, Azure, Cấu trúc dữ liệu, Thuật toán, Mẫu thiết kế, Gỡ lỗi, Hệ điều hành Windows"
+                                            class="entity"><img data-src="/static/icons/book.svg" width="16" height="16"
+                                                class="icon lazy loaded" src="/static/icons/book.svg"
+                                                data-was-processed="true">
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                    </div> <span class="body-small-l">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">1 tháng trước</font>
+                                        </font>
+                                    </span><span class="dot">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">·</font>
+                                        </font>
+                                    </span><span class="body-small-l">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;"></font>
+                                        </font>
+                                    </span>
+                                </div>
+                            </div>
+                            <!---->
+                            <div itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"
+                                title="FPT Software - Frontend Developer - Javascript " class="jobInfoCard">
+                                <div class="img"><img
+                                        data-src="https://static.ambitionbox.com/alpha/company/photos/logos/fpt-india.jpg"
+                                        width="40" height="40" alt="FPT VN"
+                                        src="https://static.ambitionbox.com/alpha/company/photos/logos/fpt-india.jpg"
+                                        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                        class="logo lazy loaded" data-was-processed="true"></div>
+                                <div class="info">
+                                    <meta itemprop="position" content="3">
+                                    <meta itemprop="url"
+                                        content="https://www.ambitionbox.com/jobs/fpt-india-jobs?rid=hirist_837339">
+                                    <meta itemprop="name"
+                                        content="FPT Software - Frontend Developer - Javascript (5-9 năm)">
+                                    <h2><a href="/jobs/fpt-india-jobs?rid=hirist_837339" class="title noclick">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">FPT Software - Frontend Developer
+                                                    - Javascript </font>
+                                            </font>
+                                        </a></h2>
+                                    <div class="company-info">
+                                        <p title="FPT VN" class="company body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    FPT VN
+                                                </font>
+                                            </font>
+                                        </p>
+                                        <div class="rating-wrapper"><a href="/reviews/fpt-india-reviews"
+                                                class="rating rating-45" title="Đánh giá 5.0"><i
+                                                    class="icon icon-star"></i> <span class="body-small">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">5.0</font>
+                                                    </font>
+                                                </span></a> <a href="/reviews/fpt-india-reviews"
+                                                class="review-count caption-strong-medium"
+                                                title="Đánh giá về FPT INDIA">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        (2 Nhận xét)
+                                                    </font>
+                                                </font>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="other-info">
+                                    <div class="job-basic-info show-flex">
+                                        <div title="5-9 năm" class="entity"><i class="icon icon-work"
+                                                style="opacity: 0.8;"></i>
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        5-9 năm
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                        <!---->
+                                        <div title="" class="entity loc"><i
+                                                class="icon icon-pin-outline"></i>
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        Kiến trúc giao diện người dùng, Javascript, AngularJS +5 khác
+
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                        <div title="Kiến trúc giao diện người dùng, Javascript, AngularJS, Bootstrap, TypeScript, HTML5, CSS3, Angular 2+"
+                                            class="entity"><img data-src="/static/icons/book.svg" width="16" height="16"
+                                                class="icon lazy loaded" src="/static/icons/book.svg"
+                                                data-was-processed="true">
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                 
+                                                </font>
+                                            </p>
+                                        </div>
+                                    </div> <span class="body-small-l">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">8 tháng trước</font>
+                                        </font>
+                                    </span><span class="dot">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">·</font>
+                                        </font>
+                                    </span><span class="body-small-l">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;"></font>
+                                        </font>
+                                    </span>
+                                </div>
+                            </div>
+                            <!---->
+                            <div itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"
+                                title="FPT Software - Backend Developer - C # / Azure " class="jobInfoCard">
+                                <div class="img"><img
+                                        data-src="https://static.ambitionbox.com/alpha/company/photos/logos/fpt-india.jpg"
+                                        width="40" height="40" alt="FPT VN"
+                                        src="https://static.ambitionbox.com/alpha/company/photos/logos/fpt-india.jpg"
+                                        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                        class="logo lazy loaded" data-was-processed="true"></div>
+                                <div class="info">
+                                    <meta itemprop="position" content="4">
+                                    <meta itemprop="url"
+                                        content="https://www.ambitionbox.com/jobs/fpt-india-jobs?rid=hirist_837337">
+                                    <meta itemprop="name"
+                                        content="FPT Software - Backend Developer - C#/Azure (5-9 năm)">
+                                    <h2><a href="/jobs/fpt-india-jobs?rid=hirist_837337" class="title noclick">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">FPT Software - Backend Developer
+                                                    - C # / Azure </font>
+                                            </font>
+                                        </a></h2>
+                                    <div class="company-info">
+                                        <p title="FPT VN" class="company body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    FPT VN
+                                                </font>
+                                            </font>
+                                        </p>
+                                        <div class="rating-wrapper"><a href="/reviews/fpt-india-reviews"
+                                                class="rating rating-45" title="Đánh giá 5.0"><i
+                                                    class="icon icon-star"></i> <span class="body-small">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">5.0</font>
+                                                    </font>
+                                                </span></a> <a href="/reviews/fpt-india-reviews"
+                                                class="review-count caption-strong-medium"
+                                                title="Đánh giá về FPT INDIA">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        (2 Nhận xét)
+                                                    </font>
+                                                </font>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="other-info">
+                                    <div class="job-basic-info show-flex">
+                                        <div title="5-9 năm" class="entity"><i class="icon icon-work"
+                                                style="opacity: 0.8;"></i>
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        5-9 năm
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                        <!---->
+                                        <div title="" class="entity loc"><i
+                                                class="icon icon-pin-outline"></i>
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        
+
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                        <div title="Mẫu thiết kế, Khung thực thể, OOAD, C #, Azure, Ứng dụng logic, Active Directory, Ứng dụng Windows, Visual Studio"
+                                            class="entity"><img data-src="/static/icons/book.svg" width="16" height="16"
+                                                class="icon lazy loaded" src="/static/icons/book.svg"
+                                                data-was-processed="true">
+                                            <p class="body-small-l">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        Mẫu thiết kế, Khung thực thể, OOAD +6 khác
+                                                    </font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                    </div> <span class="body-small-l">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">8 tháng trước</font>
+                                        </font>
+                                    </span><span class="dot">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">·</font>
+                                        </font>
+                                    </span><span class="body-small-l">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;"></font>
+                                        </font>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <!---->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    <footer style="margin-top: 10px;" class="footer_wrap">
+        <div class="footer_links_content">
+            <div class="info">
+                <div class="logo_wrap">
+                    <img src="./images/app.png" style="width: 100px; height: 100px;" />
+                    <span class="logo_text">JobsReview</span>
+                </div>
+            </div>
+            <div class="quick_links_wrap">
+                <p>Người dùng</p>
+                <div class="quick_links">
+                    <div class="quick_link">
+                        <a href="#">Công ty</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Đánh giá</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Tiền lương</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Công việc</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_links_wrap">
+                <p>JobsReview</p>
+                <div class="quick_links">
+                    <div class="quick_link">
+                        <a href="#">Về chúng tôi</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Làm việc với chúng tôi</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Gửi email cho chúng tôi</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_links_wrap">
+                <p>Hỗ trợ</p>
+                <div class="quick_links">
+                    <div class="quick_link">
+                        <a href="#">Chính sách bảo mật</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Than phiền</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Triệu tập/Thông báo</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Nguyên tắc cộng đồng</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Điều khoản sử dụng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_btns_wrap"></div>
+            <div class="quick_btns_wrap">
+                <p>Theo dõi chúng tôi</p>
+                <div class="social">
+                    <a href="#">
+                        <img class="lazyload" alt="logo instagram" width="24" height="24"
+                            src="./images/instagram-logo.svg" />
+                    </a>
+                    <a href="#">
+                        <img class="lazyload" alt="logo linkedin" width="24" height="24"
+                            src="./images/linkedin-logo.svg" />
+                    </a>
+                    <a href="#">
+                        <img class="lazyload" alt="logo facebook" width="24" height="24" src="./images/fb-logo.svg" />
+                    </a>
+                    <a href="#">
+                        <img class="lazyload" alt="logo twitter" width="24" height="24"
+                            src="./images/twitter-logo.svg" />
+                    </a>
+                </div>
+                <p>Đóng góp</p>
+                <a href="#">
+                    <button class="btn">Viết bài đánh giá</button>
+                </a>
+                <a href="#">
+                    <button class="btn">Chia sẻ về tiền lương</button>
+                </a>
+            </div>
+        </div>
+        <div class="copy_right_wrap">
+            <p>Tất cả các quyền được bảo lưu © 2022 Bitcoin Team HCMUS.</p>
+        </div>
+    </footer>
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/common.js"></script>
+    <script src="./javascripts/lightslider.min.js"></script>
+    <script src="./javascripts/home.js"></script>
+</body>
+
+</html>

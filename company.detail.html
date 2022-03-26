@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" class="" style="--vh: 6.67px">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Thông tin công ty | JobsReview</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="48x48"
-      href="./images/fav.png"
-    />
-    <link rel="preload" href="./fonts/400.woff2" as="font" type="font/woff2" />
-    <link rel="preload" href="./fonts/700.woff2" as="font" type="font/woff2"/>
-    <link rel="preload" href="./fonts/600.woff2" as="font" type="font/woff2"/>
-    <link rel="preload" href="./fonts/500.woff2" as="font" type="font/woff2"/>
-    <link rel="preload" href="./fonts/icomoon.woff2" as="font" type="font/woff2"/>
-    <link rel="stylesheet" href="./styles/home.css"/>
-    <link rel="stylesheet" href="./styles/company.detail.css"/>
-    <link rel="stylesheet" href="./styles/lightslider.min.css"/>
-  </head>
-  <body>
-    <div class="sliding-sticky-menu" id="headerWrapper">
-      <nav class="main-menu desktop blue-menu">
-        <nav class="left-section">
-          <a href="/" class="logo_name">
-            <img src="./images/app.png" height="100" width="100" alt="app_name" />
-            JobsReview
-          </a>
-          <a href="https://localhost:5000/companies.html" > Công ty </a>
-          <a href="https://localhost:5000/reviews.html" >Đánh giá </a>
-          <a href="https://localhost:5000/salaries.html" >Tiền lương</a>
-        </nav>
-        <div class="right-section">
-          <a onclick="loginPopUp();" href="javascript:void(0);" class="login not-logged-in login-text">Đăng nhập</a>
-          <div class="border-right icon-tag" >
-            <span onclick="toggleNotification();" id="notificationBell" href="javascript:void(0);">
-              <img id="bell-icon" src="./images/bell-icon.svg" width="14" height="16" alt="bell" /><span
-                id="notification-count"
-                class="badge"
-                style="display: none">
-          </div>
-        </div>
-      </nav>
-      <section class="cover_image_wrap">
-        <div
-          class="cover_image_content_wrap page-wrap"
-          style="background-image: url('./images/buildings.svg'); padding: 3.75rem 0 3rem"
-        >
-          <div class="cover_image_content">
-            <h1 itemprop="headline">
-              Khám phá những nơi tốt nhất để làm việc!
-            </h1>
-            <div class="cover_image_text">
-              <span itemprop="description">Đánh giá của công ty. xem chia sẻ về tiền lương.</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <div id="abh_info" class="content container">
-        <div class="wrap">
-          <a href="#">
-            <img src="./images/fpt.png" width="100" height="100" alt="Capgemini logo" class="logo">
-          </a>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Thông tin công ty | JobsReview</title>
+  <link rel="icon" type="image/png" sizes="48x48" href="./images/fav.png" />
+  <link rel="preload" href="./fonts/400.woff2" as="font" type="font/woff2" />
+  <link rel="preload" href="./fonts/700.woff2" as="font" type="font/woff2" />
+  <link rel="preload" href="./fonts/600.woff2" as="font" type="font/woff2" />
+  <link rel="preload" href="./fonts/500.woff2" as="font" type="font/woff2" />
+  <link rel="preload" href="./fonts/icomoon.woff2" as="font" type="font/woff2" />
+  <link rel="stylesheet" href="./styles/home.css" />
+  <link rel="stylesheet" href="./styles/company.detail.css" />
+  <link rel="stylesheet" href="./styles/lightslider.min.css" />
+</head>
+
+<body>
+  <div class="sliding-sticky-menu" id="headerWrapper">
+    <nav class="main-menu desktop blue-menu">
+      <nav class="left-section">
+        <a href="/" class="logo_name">
+          <img src="./images/app.png" height="100" width="100" alt="app_name" />
+          JobsReview
+        </a>
+        <a href="https://localhost:5000/companies.html"> Công ty </a>
+        <a href="https://localhost:5000/reviews.html">Đánh giá </a>
+        <a href="https://localhost:5000/salaries.html">Tiền lương</a>
+      </nav>
+      <div class="right-section">
+        <a onclick="loginPopUp();" href="javascript:void(0);" class="login not-logged-in login-text">Đăng nhập</a>
+        <div class="border-right icon-tag">
+          <span onclick="toggleNotification();" id="notificationBell" href="javascript:void(0);">
+            <img id="bell-icon" src="./images/bell-icon.svg" width="14" height="16" alt="bell" /><span
+              id="notification-count" class="badge" style="display: none">
         </div>
-        <div class="content-wrap">
-          <div class="content">
-            <p class="name bold-display mg-btm-4">FPT Software</p>
-            <div class="rating-wrapper">
-              <p >
-                <i class="icon icon-star"></i>
-                <span class="bold-list-header">3.8</span>
-              </p>
-              <a href="#">
-                <p class="review-count caption-strong-medium" style="margin-left: 12px;">15.6k lượt đánh giá</p>
-              </a>
-              <div class="tooltip right">
-                <div class="question-badge">i</div>
-              </div>
+      </div>
+    </nav>
+    <section class="cover_image_wrap">
+      <div class="cover_image_content_wrap page-wrap"
+        style="background-image: url('./images/buildings.svg'); padding: 3.75rem 0 3rem">
+        <div class="cover_image_content">
+          <h1 itemprop="headline">
+            Khám phá những nơi tốt nhất để làm việc!
+          </h1>
+          <div class="cover_image_text">
+            <span itemprop="description">Đánh giá của công ty. xem chia sẻ về tiền lương.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="abh_info" class="content container">
+      <div class="wrap">
+        <a href="#">
+          <img src="./images/fpt.png" width="100" height="100" alt="Capgemini logo" class="logo">
+        </a>
+      </div>
+      <div class="content-wrap">
+        <div class="content">
+          <p class="name bold-display mg-btm-4">FPT Software</p>
+          <div class="rating-wrapper">
+            <p>
+              <i class="icon icon-star"></i>
+              <span class="bold-list-header">3.8</span>
+            </p>
+            <a href="#">
+              <p class="review-count caption-strong-medium" style="margin-left: 12px;">15.6k lượt đánh giá</p>
+            </a>
+            <div class="tooltip right">
+              <div class="question-badge">i</div>
             </div>
           </div>
-          <p class="about-us caption-subdued bold-header-desc">FPT (Tập đoàn FPT, tiếng Anh: FPT Group), tên viết tắt của Công ty Cổ phần FPT (tên cũ là Công ty Phát triển và Đầu tư Công nghệ), là một trong những công ty dịch vụ công nghệ thông tin lớn nhất tại Việt Nam với lĩnh vực kinh doanh chính là cung cấp các sản phẩm dịch vụ công nghệ thông tin[1] Theo Stevie® Award...
-            <a href="#" class="read-more sbold-header-desc">read more</a>
-          </p>
-          <div class="sm-flex">
-            <div class="basic-info">
-              <div class="infoEntity full-width">
-                <img src="./images/globe.svg" width="20" height="20">
+        </div>
+        <p class="about-us caption-subdued bold-header-desc">FPT (Tập đoàn FPT, tiếng Anh: FPT Group), tên viết tắt của
+          Công ty Cổ phần FPT (tên cũ là Công ty Phát triển và Đầu tư Công nghệ), là một trong những công ty dịch vụ
+          công nghệ thông tin lớn nhất tại Việt Nam với lĩnh vực kinh doanh chính là cung cấp các sản phẩm dịch vụ công
+          nghệ thông tin[1] Theo Stevie® Award...
+          <a href="#" class="read-more sbold-header-desc">read more</a>
+        </p>
+        <div class="sm-flex">
+          <div class="basic-info">
+            <div class="infoEntity full-width">
+              <img src="./images/globe.svg" width="20" height="20">
               <p class="sbold-list-header">Việt Nam</p>
             </div>
           </div>
@@ -116,22 +112,22 @@
         </div>
       </div>
     </div>
-    
+
     <div job-profile-name="" id="ab_company_review_rating_card" class="ab_comp_rating_card container container">
-        <div class="ab_card card" style="margin-top: 3rem;">
-          <div class="flex-wrap">
-            <div class="overall-wrap">
-              <p class="bold-section-header title">Xếp hạng tổng thể</p>
-              <div style="display:flex;">
-                <div class="badge-cont">
-                  <div class="badge-x-large rating-35">
-                    <i class="icon icon-star"></i>
-                    <span class="rating-val bold-title">3.8</span>
-                  </div>
+      <div class="ab_card card" style="margin-top: 3rem;">
+        <div class="flex-wrap">
+          <div class="overall-wrap">
+            <p class="bold-section-header title">Xếp hạng tổng thể</p>
+            <div style="display:flex;">
+              <div class="badge-cont">
+                <div class="badge-x-large rating-35">
+                  <i class="icon icon-star"></i>
+                  <span class="rating-val bold-title">3.8</span>
                 </div>
-                <div class="rating_stats_bars">
-                  <div class="rating_bar_wrap with-checkbox"
-                  ><input type="checkbox" name="rating-5" id="rating-5" value="5" class="custom-checkbox">
+              </div>
+              <div class="rating_stats_bars">
+                <div class="rating_bar_wrap with-checkbox"><input type="checkbox" name="rating-5" id="rating-5"
+                    value="5" class="custom-checkbox">
                   <label for="rating-5" class="label-wrapper custom-checkbox-label">
                     <p class="stars_values">5</p>
                     <i class="icon icon-star"></i>
@@ -230,125 +226,173 @@
           </div>
         </div>
       </div>
-    </div></div></div></div>  
+    </div>
+    <div data-v-196067c6="" class="section-margin-bottom">
+      <div data-v-196067c6="" class="ab_section-header container flex">
+        <div class="titleCont">
+          <h2 class="title bold-title-l"> <span>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Nhìn vào nơi làm việc</font>
+              </font>
+            </span>
+            <!---->
+          </h2>
+          <!---->
+          <!---->
+          <!---->
+        </div>
+      </div>
+      <div data-v-196067c6="" class="container-left">
+        <div data-v-196067c6="" style="position: relative;">
+          <div class="lSSlideOuter ">
+            <div class="lSSlideWrapper usingCss">
+              <div id="photos-slider" class="card-slider lightSlider lsGrab lSSlide"
+                style="width: 2664px; height: 200px; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px);">
+                <picture data-v-196067c6="" class="item lslide active" style="width: 284px; margin-right: 12px;">
+                  <source data-v-196067c6="" type="image/webp"
+                    data-srcset=""> <img data-v-196067c6=""
+                    src="https://hcmfpt.vn/vnt_upload/news/05_2021/FPT_Tower_so_10_Pham_Van_Bach_phuong_Dich_Vong_quan_Cau_Giay_Ha_Noi.jpg" data-src=""
+                    width="280" height="200" class="">
+                </picture>
+                <picture data-v-196067c6="" class="item lslide" style="width: 284px; margin-right: 12px;">
+                  <source data-v-196067c6="" type="image/webp"
+                    data-srcset=""> <img data-v-196067c6=""
+                    src="data:image/jpeg;base64,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" data-src=""
+                    width="280" height="200" class="">
+                </picture>
+                <picture data-v-196067c6="" class="item lslide" style="width: 284px; margin-right: 12px;">
+                  <source data-v-196067c6="" type="image/webp"
+                    data-srcset=""> <img data-v-196067c6=""
+                    src="https://i.chungta.vn/2020/02/17/1-1581877487_860x0.jpg"
+                    data-src="" alt="" width="280" height="200" class="">
+                </picture>
+                <picture data-v-196067c6="" class="item lslide" style="width: 284px; margin-right: 12px;">
+                  <source data-v-196067c6="" type="image/webp"
+                    src="https://i.chungta.vn/2020/02/17/1-1581877487_860x0.jpg"
+                    data-src="" alt="" width="280" height="200" class="">
+                </picture>
+                <picture data-v-196067c6="" class="item lslide" style="width: 284px; margin-right: 12px;">
+                  <source data-v-196067c6="" type="image/webp" srcset=""
+                    data-srcset="">
+                  <img data-v-196067c6="" src="https://i.chungta.vn/2020/02/17/1-1581877487_860x0.jpg"
+                    data-src=""
+                    alt="" width="280" height="200" class="lazy-onload">
+                </picture>
+              </div>
+            </div>
+          </div> <span class="slider_prev hidden_control slider_btns"><i class="icon-chevron-right"></i></span> <span
+            class="slider_next slider_btns"><i class="icon-chevron-right"></i></span>
+        </div> 
+      </div>
+      <div class="section-margin-bottom about-sec" id="aboutUs"><div class="ab_section-header container block"><div class="titleCont"><h2 class="title bold-title-l"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Về FPT</font></font></span> <!----></h2> <!----> <!----> <!----> </div> <!----></div> <div class="container"><div class="ab_card"><div class="intro body-medium"><!----> <div itemprop="description" class=""><strong class="bold-list-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mô tả:&nbsp;</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FPT (Tập đoàn FPT, tiếng Anh: FPT Group), tên viết tắt của Công ty Cổ phần FPT (tên cũ là Công ty Phát triển và Đầu tư Công nghệ), là một trong những công ty dịch vụ công nghệ thông tin lớn nhất tại Việt Nam với lĩnh vực kinh doanh chính là cung cấp các sản phẩm dịch vụ công nghệ thông tin[1] Theo Stevie® Award, FPT là vinh dự đoạt giải Bạc và là doanh nghiệp Việt Nam duy nhất được vinh danh ở hạng mục Doanh nghiệp Ứng phó Covid-19 hiệu quả nhất (Most Valuable Corporate Response). [2] Năm 2020, doanh thu FPT đạt 29.830 tỷ đồng, tăng 7,6% so với năm 2019; lợi nhuận trước thuế đạt 5.263 tỷ đồng, tăng 12,8% so với năm 2019.
+				</font></font></div> <div class="mt-24"><strong class="bold-list-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sứ mệnh:&nbsp;</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> của chúng tôi là giúp khách hàng đạt được các mục tiêu kinh doanh của họ bằng cách cung cấp các giải pháp và dịch vụ tư vấn, CNTT tiên tiến, tốt nhất và mang lại niềm vui cho tất cả các bên liên quan khi làm việc với chúng tôi.
+				</font></font></div> <!----> <div class="mt-24"><strong class="bold-list-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tên đã đăng ký:&nbsp;</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Công ty cổ phần FPT
+				</font></font></div> <div class="mt-24"><strong class="bold-list-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Được thành lập vào năm:&nbsp;</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 1988 
+				</font></font></div> <div class="mt-24"><strong class="bold-list-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trang web:&nbsp; </font></font></strong><a href="https://www.fpt.com/" target="_blank" rel="noopener nofollow" class="website"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fpt.com</font></font></a></div></div> <!----> <div class="body-medium contact-container"><!----></div>  <!----></div> </div></div>
+    </div>
+  </div>
+  </div>
+  </div>
 
-    <footer class="footer_wrap">
-      <div class="footer_links_content">
-        <div class="info">
-          <div class="logo_wrap">
-            <img src="./images/app.png" style="width: 100px; height: 100px;"/>
-            <span class="logo_text">JobsReview</span>
-          </div>
-        </div>
-        <div class="quick_links_wrap">
-          <p>Người dùng</p>
-          <div class="quick_links">
-            <div class="quick_link">
-              <a href="#">Công ty</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Đánh giá</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Tiền lương</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Công việc</a>
-            </div>
-          </div>
-        </div>
-        <div class="quick_links_wrap">
-          <p>JobsReview</p>
-          <div class="quick_links">
-            <div class="quick_link">
-              <a href="#">Về chúng tôi</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Làm việc với chúng tôi</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Gửi email cho chúng tôi</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Blog</a></div>
-            <div class="quick_link">
-              <a href="#">FAQ</a>
-            </div>
-          </div>
-        </div>
-        <div class="quick_links_wrap">
-          <p>Hỗ trợ</p>
-          <div class="quick_links">
-            <div class="quick_link">
-              <a href="#">Chính sách bảo mật</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Than phiền</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Triệu tập/Thông báo</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Nguyên tắc cộng đồng</a>
-            </div>
-            <div class="quick_link">
-              <a href="#">Điều khoản sử dụng</a>
-            </div>
-          </div>
-        </div>
-        <div class="quick_btns_wrap"></div>
-        <div class="quick_btns_wrap">
-          <p>Theo dõi chúng tôi</p>
-          <div class="social">
-            <a href="#">
-              <img
-                class="lazyload"
-                alt="logo instagram"
-                width="24"
-                height="24"
-                src="./images/instagram-logo.svg"/>
-            </a>
-            <a href="#">
-              <img
-                class="lazyload"
-                alt="logo linkedin"
-                width="24"
-                height="24"
-                src="./images/linkedin-logo.svg"/>
-            </a>
-            <a href="#">
-              <img
-                class="lazyload"
-                alt="logo facebook"
-                width="24"
-                height="24"
-                src="./images/fb-logo.svg"/>
-              </a>
-              <a href="#">
-                <img
-                class="lazyload"
-                alt="logo twitter"
-                width="24"
-                height="24"
-                src="./images/twitter-logo.svg"/>
-              </a>
-          </div>
-          <p>Đóng góp</p>
-          <a href="#">
-            <button class="btn">Viết bài đánh giá</button>
-          </a>
-          <a href="#">
-            <button class="btn">Chia sẻ về tiền lương</button>
-          </a>
+  <footer class="footer_wrap">
+    <div class="footer_links_content">
+      <div class="info">
+        <div class="logo_wrap">
+          <img src="./images/app.png" style="width: 100px; height: 100px;" />
+          <span class="logo_text">JobsReview</span>
         </div>
       </div>
-      <div class="copy_right_wrap">
-        <p>Tất cả các quyền được bảo lưu © 2022 Bitcoin Team HCMUS.</p>
+      <div class="quick_links_wrap">
+        <p>Người dùng</p>
+        <div class="quick_links">
+          <div class="quick_link">
+            <a href="#">Công ty</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Đánh giá</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Tiền lương</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Công việc</a>
+          </div>
+        </div>
       </div>
-    </footer>
-    <script src="./javascripts/jquery.min.js"></script>
-    <script src="./javascripts/common.js"></script>
-    <script src="./javascripts/lightslider.min.js"></script>
-    <script src="./javascripts/home.js"></script>
-  </body>
+      <div class="quick_links_wrap">
+        <p>JobsReview</p>
+        <div class="quick_links">
+          <div class="quick_link">
+            <a href="#">Về chúng tôi</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Làm việc với chúng tôi</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Gửi email cho chúng tôi</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Blog</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <div class="quick_links_wrap">
+        <p>Hỗ trợ</p>
+        <div class="quick_links">
+          <div class="quick_link">
+            <a href="#">Chính sách bảo mật</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Than phiền</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Triệu tập/Thông báo</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Nguyên tắc cộng đồng</a>
+          </div>
+          <div class="quick_link">
+            <a href="#">Điều khoản sử dụng</a>
+          </div>
+        </div>
+      </div>
+      <div class="quick_btns_wrap"></div>
+      <div class="quick_btns_wrap">
+        <p>Theo dõi chúng tôi</p>
+        <div class="social">
+          <a href="#">
+            <img class="lazyload" alt="logo instagram" width="24" height="24" src="./images/instagram-logo.svg" />
+          </a>
+          <a href="#">
+            <img class="lazyload" alt="logo linkedin" width="24" height="24" src="./images/linkedin-logo.svg" />
+          </a>
+          <a href="#">
+            <img class="lazyload" alt="logo facebook" width="24" height="24" src="./images/fb-logo.svg" />
+          </a>
+          <a href="#">
+            <img class="lazyload" alt="logo twitter" width="24" height="24" src="./images/twitter-logo.svg" />
+          </a>
+        </div>
+        <p>Đóng góp</p>
+        <a href="#">
+          <button class="btn">Viết bài đánh giá</button>
+        </a>
+        <a href="#">
+          <button class="btn">Chia sẻ về tiền lương</button>
+        </a>
+      </div>
+    </div>
+    <div class="copy_right_wrap">
+      <p>Tất cả các quyền được bảo lưu © 2022 Bitcoin Team HCMUS.</p>
+    </div>
+  </footer>
+  <script src="./javascripts/jquery.min.js"></script>
+  <script src="./javascripts/common.js"></script>
+  <script src="./javascripts/lightslider.min.js"></script>
+  <script src="./javascripts/home.js"></script>
+</body>
+
 </html>

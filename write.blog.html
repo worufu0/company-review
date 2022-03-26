@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="" style="--vh: 6.67px">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Viết Blog | JobsReview</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/fav.png" />
+    <link rel="preload" href="./fonts/400.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/700.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/600.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/500.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/icomoon.woff2" as="font" type="font/woff2" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/company.detail.css" />
+    <link rel="stylesheet" href="./styles/lightslider.min.css" />
+    <link rel="stylesheet" href="./styles/write.blog.css" />
+    <link rel="stylesheet" href="./styles/review.css" />
+</head>
+
+<body>
+    <div class="sliding-sticky-menu" id="headerWrapper">
+        <nav class="main-menu desktop blue-menu">
+            <nav class="left-section">
+                <a href="/" class="logo_name">
+                    <img src="./images/app.png" height="100" width="100" alt="app_name" />
+                    JobsReview
+                </a>
+                <a href="https://localhost:5000/companies.html"> Công ty </a>
+                <a href="https://localhost:5000/reviews.html">Đánh giá </a>
+                <a href="https://localhost:5000/salaries.html">Tiền lương</a>
+            </nav>
+            <div class="right-section">
+                <a onclick="loginPopUp();" href="javascript:void(0);" class="login not-logged-in login-text">Đăng
+                    nhập</a>
+                <div class="border-right icon-tag">
+                    <span onclick="toggleNotification();" id="notificationBell" href="javascript:void(0);">
+                        <img id="bell-icon" src="./images/bell-icon.svg" width="14" height="16" alt="bell" /><span
+                            id="notification-count" class="badge" style="display: none">
+                </div>
+            </div>
+        </nav>
+
+        <div id="__layout">
+            <div data-v-21018616="" id="contribute">
+                <div data-v-21018616="" id="" class="pd-btm-48" style="padding-top: 0px;">
+                    <div data-v-21018616="" id="contribute" class="container">
+                        <div class="header text-left">
+                            <h1 class="heading bold-display-l">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Ai đó cần lời khuyên của bạn!
+                                    </font>
+                                </font>
+                            </h1>
+                            <p class="sub-heading">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Trên thực tế, đó là một vài triệu người. </font>
+                                    <font style="vertical-align: inherit;">Chia sẻ tiếng nói của bạn. </font>
+                                    <font style="vertical-align: inherit;">Bạn luôn đạt được bằng cách cho đi.
+                                    </font>
+                                </font>
+                            </p>
+                        </div>
+                        <div>
+                            <div class="contribute-carousal">
+                                <p class="bold-title-s">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">
+                                            Đánh giá các công ty bạn đã làm việc
+                                        </font>
+                                    </font>
+                                </p>
+                                <div style="position: relative;">
+                                    <div class="lSSlideOuter ">
+                                        <div class="lSSlideWrapper usingCss">
+                                            <div id="writeReviewCarousal" class="card-slider lightSlider lsGrab lSSlide"
+                                                style="width: 696px; height: 178.625px; padding-bottom: 0%;">
+                                                <div class="ab_card contribute-card lslide active"
+                                                    style="cursor: pointer; width: 328px; margin-right: 20px;">
+                                                    <div class="card-header"><img
+                                                            src="./images/fpt.png"
+                                                            width="56" height="56"
+                                                            alt="Logo của Reliance Industries Limited">
+                                                        <div class="company-data">
+                                                            <p title="Reliance Industries Limited" class="name">
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        FPT Software
+                                                                    </font>
+                                                                </font>
+                                                            </p>
+                                                            <!---->
+                                                            <p class="meta body-small-l">
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        8% đã hoàn thành
+
+                                                                        &nbsp;</font>
+                                                                </font><span></span>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">&nbsp;
+                                                                        2 giờ trước
+                                                                    </font>
+                                                                </font>
+                                                            </p> <a
+                                                                href="/contribute/company-review?company_name=Reliance+Industries+Limited&amp;campaign=contribution_page_pending"
+                                                                class="navigation ctas-a-large">
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        Hoàn thành đánh giá
+                                                                    </font>
+                                                                </font><i class="icon-arrow-right"></i>
+                                                            </a>
+                                                        </div>
+                                                        <p class="status">
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">chưa hoàn thiện
+                                                                </font>
+                                                            </font>
+                                                        </p>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                                <div class="ab_card lslide" id="writemore-card"
+                                                    style="cursor: pointer; width: 328px; margin-right: 20px;">
+                                                    <p class="heading">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Đánh giá công ty khác
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                    <p class="subheading">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Chia sẻ đánh giá về
+                                                                công ty hiện tại hoặc trước đây của bạn</font>
+                                                        </font>
+                                                    </p> <a class="ctas-a-large">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">
+                                                                Viết đánh giá</font>
+                                                        </font><i class="icon-arrow-right"></i>
+                                                    </a>
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <span class="slider_prev hidden_control slider_btns"><i
+                                            class="icon-chevron-right"></i></span> <span
+                                        class="slider_next slider_btns hidden_control"><i
+                                            class="icon-chevron-right"></i></span>
+                                </div>
+                            </div>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div id="contributeBanner"><img
+                                    src="https://static.ambitionbox.com/static/icons/contribute/person-typing-landscape.svg"
+                                    class="">
+                                <div class="content">
+                                    <div class="text">
+                                        <p class="heading bold-title-s">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Chia sẻ lời khuyên phỏng vấn
+                                                </font>
+                                            </font>
+                                        </p>
+                                        <p class="subheading body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Chia sẻ các câu hỏi và mẹo phỏng vấn. </font>
+                                                <font style="vertical-align: inherit;">Giúp ai đó đạt được ước mơ của
+                                                    họ.
+                                                </font>
+                                            </font>
+                                        </p>
+                                    </div> <button class="ab_btn round" title="Viết lời khuyên phỏng vấn"><span
+                                            class="ctas-btn-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Viết lời khuyên phỏng vấn</font>
+                                            </font>
+                                        </span></button>
+                                </div>
+                            </div>
+                            <div id="contributeBanner"><img
+                                    src="https://static.ambitionbox.com/static/icons/contribute/salary-circle.svg"
+                                    class="alignImg">
+                                <div class="content">
+                                    <div class="text">
+                                        <p class="heading bold-title-s">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Chia sẻ tiền lương của bạn
+                                                </font>
+                                            </font>
+                                        </p>
+                                        <p class="subheading body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Thêm mức lương ẩn danh của công ty hiện tại hoặc trước đây của bạn.
+                                                </font>
+                                            </font>
+                                        </p>
+                                    </div> <button class="ab_btn round" title="Thêm một mức lương"><span
+                                            class="ctas-btn-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Thêm một mức lương</font>
+                                            </font>
+                                        </span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <!---->
+                <div data-v-0fa57eae="" data-v-21018616="" class="modal-mask" style="display: none;">
+                    <div data-v-0fa57eae="" class="modal-wrapper">
+                        <!---->
+                    </div>
+                </div>
+                <div data-v-21018616="" class="vue-notification-group"
+                    style="width: 300px; top: 0px; left: calc(50% - 150px);"><span></span></div>
+                <!---->
+                <!---->
+                <!---->
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    <footer style="margin-top: 10px;" class="footer_wrap">
+        <div class="footer_links_content">
+            <div class="info">
+                <div class="logo_wrap">
+                    <img src="./images/app.png" style="width: 100px; height: 100px;" />
+                    <span class="logo_text">JobsReview</span>
+                </div>
+            </div>
+            <div class="quick_links_wrap">
+                <p>Người dùng</p>
+                <div class="quick_links">
+                    <div class="quick_link">
+                        <a href="#">Công ty</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Đánh giá</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Tiền lương</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Công việc</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_links_wrap">
+                <p>JobsReview</p>
+                <div class="quick_links">
+                    <div class="quick_link">
+                        <a href="#">Về chúng tôi</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Làm việc với chúng tôi</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Gửi email cho chúng tôi</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_links_wrap">
+                <p>Hỗ trợ</p>
+                <div class="quick_links">
+                    <div class="quick_link">
+                        <a href="#">Chính sách bảo mật</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Than phiền</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Triệu tập/Thông báo</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Nguyên tắc cộng đồng</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Điều khoản sử dụng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_btns_wrap"></div>
+            <div class="quick_btns_wrap">
+                <p>Theo dõi chúng tôi</p>
+                <div class="social">
+                    <a href="#">
+                        <img class="lazyload" alt="logo instagram" width="24" height="24"
+                            src="./images/instagram-logo.svg" />
+                    </a>
+                    <a href="#">
+                        <img class="lazyload" alt="logo linkedin" width="24" height="24"
+                            src="./images/linkedin-logo.svg" />
+                    </a>
+                    <a href="#">
+                        <img class="lazyload" alt="logo facebook" width="24" height="24" src="./images/fb-logo.svg" />
+                    </a>
+                    <a href="#">
+                        <img class="lazyload" alt="logo twitter" width="24" height="24"
+                            src="./images/twitter-logo.svg" />
+                    </a>
+                </div>
+                <p>Đóng góp</p>
+                <a href="#">
+                    <button class="btn">Viết bài đánh giá</button>
+                </a>
+                <a href="#">
+                    <button class="btn">Chia sẻ về tiền lương</button>
+                </a>
+            </div>
+        </div>
+        <div class="copy_right_wrap">
+            <p>Tất cả các quyền được bảo lưu © 2022 Bitcoin Team HCMUS.</p>
+        </div>
+    </footer>
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/common.js"></script>
+    <script src="./javascripts/lightslider.min.js"></script>
+    <script src="./javascripts/home.js"></script>
+</body>
+
+</html>

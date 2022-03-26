@@ -1,0 +1,169 @@
+#contribute {
+    margin-top: 7.5rem;
+    margin-bottom: 4.75rem;
+}
+#contribute .header .heading {
+    margin: 0;
+    line-height: normal;
+}
+#contribute .header{
+    margin-bottom: 20px;
+}
+html, body {
+    font-family: 'proxima-nova', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+.container, .container-two-col {
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+.contribute-carousal {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.contribute-carousal>p {
+    margin: 1rem 0;
+}
+.contribute-card .card-header {
+    display: flex;
+}
+.contribute-card .card-header>img {
+    border-radius: 4px;
+    border: solid 1px #f0f0f0;
+    object-fit: contain;
+}
+.contribute-card .card-header .company-data {
+    margin-left: 1.0625rem;
+    min-height: 7.5rem;
+    position: relative;
+}
+.contribute-card .card-header .company-data .name {
+    font-size: 1.125rem;
+    line-height: normal;
+    font-weight: 600;
+    color: #1E223C;
+    margin-bottom: 0.3125rem;
+    margin-top: 0.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 13.75rem;
+}
+.contribute-card .card-header .company-data .meta {
+    color: #5E6B92;
+    line-height: normal;
+    display: inline-flex;
+    align-items: center;
+    font-size: .8125rem;
+    white-space: nowrap;
+}
+.contribute-card .card-header .company-data .navigation {
+    display: block;
+    margin-top: 0.625rem;
+    line-height: normal;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+}
+.contribute-card .card-header .status {
+    border-radius: 4px;
+    background-color: #fff5e4;
+    font-size: .75rem;
+    font-weight: 500;
+    text-align: center;
+    color: #d18d02;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    padding: 0.125rem 0.4375rem;
+    line-height: normal;
+}
+.contribute-card .card-header .company-data .navigation i {
+    font-size: .625rem;
+    font-weight: bold;
+    margin-left: 4px;
+    color: #5670fb;
+}
+
+#writemore-card {
+    padding: 1.875rem 1.25rem 1.25rem 1.25rem;
+    margin-bottom: 4px;
+}
+#writemore-card .heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.28;
+    color: #1E223C;
+    margin: 0.125rem 0 0.375rem 0;
+}
+#writemore-card .subheading {
+    font-size: .875rem;
+    color: #1E223C;
+    line-height: normal;
+    margin-bottom: 1.85rem;
+}
+#writemore-card a i {
+    font-size: .625rem;
+    font-weight: bold;
+    margin-left: 4px;
+    color: #5670fb;
+}
+#contributeBanner {
+    border-radius: 6px;
+    box-shadow: 0 2px 6px -2px rgb(0 106 194 / 20%);
+    border: solid 1px #ebf0f6;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 8.25rem;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+#contributeBanner img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+#contributeBanner .content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+.ab_btn {
+    padding: 7px 14px;
+    min-width: 120px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px -2px rgb(0 106 194 / 20%);
+    background-color: #5670fb;
+    border: 1px solid #5670fb;
+    color: #fff;
+    border-radius: 1.5rem;
+    outline: none;
+}
+#contributeBanner .content .text .heading {
+    margin-bottom: 0.3125rem;
+}
+
+.bold-title-s {
+    font-size: 1.125rem;
+    line-height: 1.1;
+}
+.body-medium {
+    font-size: .875rem;
+    line-height: 1.43;
+}
+.body-text, .body-small, .body-small-l, .body-medium, .body-large {
+    font-weight: normal;
+    letter-spacing: normal;
+    color: #1e223c;
+}

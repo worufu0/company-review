@@ -1,0 +1,167 @@
+
+
+.ab_section-header {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+.card-slider {
+     display: flex; 
+     flex-direction: row; 
+     align-items: flex-start; 
+    height: auto !important;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+.lSSlideOuter {
+    overflow: hidden;
+    user-select: none;
+}
+
+
+.ab_card {
+    padding: 1.5rem;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 2px 6px -2px rgb(0 106 194 / 20%);
+    border: solid 1px #ebf0f6;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+}
+.browseCompanies #browse-location .ab_card .location-anchor-text {
+    font-weight: 600;
+    display: block;
+}
+
+.bold-section-header {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+div img a{
+    margin-left: 6px;
+}
+.browseCompanies #browse-location .ab_card {
+    cursor: pointer;
+    min-width: 9.625rem;
+    height: 9.5625rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px -2px rgb(0 106 194 / 20%);
+}
+.review_details{
+    margin-top: 3px;
+}
+.white_section{
+    margin-bottom: 5px;
+}
+.shadow-buffer{
+    width: 328px;
+    margin-right: 20px;
+}
+.ab_company_info-card .company .img .logo {
+    border-radius: 4px;
+    object-fit: contain;
+    border: solid 1px #f0f0f0;
+}
+.ab_company_info-card .company .img {
+    margin-right: 0.75rem;
+    padding-top: 1.25rem;
+}
+.ab_company_info-card .company {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 114px;
+    padding: 0 1rem 0 1.25rem !important;
+    border-bottom: none;
+}
+.ab_company_info-card .company-action-center {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 2px 6px -2px rgb(0 106 194 / 20%);
+    border: solid 1px #ebf0f6;
+    background-color: #fff;
+    border-top: none;
+    padding: 0 1.5rem 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.ab_company_info-card .company-action-center .action-item a {
+    color: #1E223C;
+    text-decoration: none;
+    padding: 0.5rem 1.3rem 1rem;
+    margin: -0.5rem -1.3rem -1rem;
+}
+
+.body-medium {
+    font-size: .875rem;
+    line-height: 1.43;
+}
+.ab_company_info-card .company .info .industry {
+    margin-top: 0.25rem;
+    height: 1.0625rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ab_company_info-card .company .info .rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 0.5rem;
+}
+.ab_company_info-card .company .info .rating .badge-large {
+    padding: 2px 4px;
+    font-size: .75rem;
+    line-height: 1.33;
+    border-radius: 2px;
+    color: #fff;
+    min-width: 2.8125rem;
+}
+.ab_company_info-card .company .info .industry {
+    margin-top: 0.25rem;
+    height: 1.0625rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ab_company_info-card .company .info .title {
+    text-transform: capitalize;
+    line-height: 1.06;
+    word-break: break-word;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 2.125rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    height: auto;
+    max-width: 10.875rem;
+}
+.ab_company_info-card .company .info {
+    width: calc(100% - 76px);
+    align-self: center;
+}
+.ab_company_info-card .company .info .rating .desc {
+    margin-left: 0.5rem;
+}
+.caption-subdued-medium {
+    font-size: .75rem;
+    line-height: 1.33;
+}
+.ab_company_info-card .company-action-center .action-item a {
+    color: #1E223C;
+    text-decoration: none;
+    padding: 0.5rem 1.3rem 1rem;
+    margin: -0.5rem -1.3rem -1rem;
+}
+.body-medium {
+    font-size: .875rem;
+    line-height: 1.43;
+}

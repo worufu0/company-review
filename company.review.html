@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en" class="" style="--vh: 6.67px">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Đánh giá công ty | JobsReview</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/fav.png" />
+    <link rel="preload" href="./fonts/400.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/700.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/600.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/500.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="./fonts/icomoon.woff2" as="font" type="font/woff2" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/company.detail.css" />
+    <link rel="stylesheet" href="./styles/lightslider.min.css" />
+    <link rel="stylesheet" href="./styles/company.review.css" />
+</head>
+
+<body>
+    <div class="sliding-sticky-menu" id="headerWrapper">
+        <nav class="main-menu desktop blue-menu">
+            <nav class="left-section">
+                <a href="/" class="logo_name">
+                    <img src="./images/app.png" height="100" width="100" alt="app_name" />
+                    JobsReview
+                </a>
+                <a href="https://localhost:5000/companies.html"> Công ty </a>
+                <a href="https://localhost:5000/reviews.html">Đánh giá </a>
+                <a href="https://localhost:5000/salaries.html">Tiền lương</a>
+            </nav>
+            <div class="right-section">
+                <a onclick="loginPopUp();" href="javascript:void(0);" class="login not-logged-in login-text">Đăng
+                    nhập</a>
+                <div class="border-right icon-tag">
+                    <span onclick="toggleNotification();" id="notificationBell" href="javascript:void(0);">
+                        <img id="bell-icon" src="./images/bell-icon.svg" width="14" height="16" alt="bell" /><span
+                            id="notification-count" class="badge" style="display: none">
+                </div>
+            </div>
+        </nav>
+        <section class="cover_image_wrap">
+            <div class="cover_image_content_wrap page-wrap"
+                style="background-image: url('./images/buildings.svg'); padding: 3.75rem 0 3rem">
+                <div class="cover_image_content">
+                    <h1 itemprop="headline">
+                        Tìm kiếm Đánh giá & Xếp hạng Công ty
+                    </h1>
+                    <div class="cover_image_text">
+                        <span itemprop="description">Đọc những gì nhân viên đang nói về công ty.</span>
+                    </div>
+                </div>
+                <div class="search_new">
+                    <form id="homeSearch" class="searchForm">
+                        <span class="twitter-typeahead" style="position: relative; display: inline-block; width: 457px">
+                            <input class="search_company_input js-menu-search tt-input" type="text"
+                                placeholder="Tìm kiếm theo công ty hoặc từ ngữ liên quan"
+                                style="position: relative; vertical-align: top">
+                        </span>
+
+                        <div class="search-button">
+                            <input type="submit" class="blue-btn-small" value="Tìm kiếm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div id="abh_info" class="content container">
+            <div class="ab_section-header container flex">
+                <div class="titleCont">
+                    <h2 class="title bold-title-l"> <span>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Duyệt công ty theo vị trí</font>
+                            </font>
+                        </span>
+                        <!---->
+                    </h2>
+                    <!---->
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+        <div class="section-margin-bottom container-left" style="position: relative;">
+            <div class="lSSlideOuter ">
+                <div class="lSSlideWrapper usingCss"
+                    style="transition-duration: 300ms; transition-timing-function: ease;">
+                    <div id="browse-location" class="card-slider lightSlider lSSlide lsGrab"
+                        style="width: 1044px; height: 153px; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px);">
+                        <div title="Các công ty ở New Delhi" class="ab_card lslide active"
+                            style="width: 154px; margin-right: 20px;"><img style=" width: 5.9rem;
+                            height: 4.75rem;
+                            margin-bottom: 0.6rem;
+                            object-fit: contain;" src="https://static.ambitionbox.com/static/icons/locations/delhi.svg"
+                                alt="New Delhi">
+                            <a href="/companies-in-new-delhi" class="bold-section-header location-anchor-text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">TP HCM
+                                    </font>
+                                </font>
+                            </a>
+                            <!---->
+                        </div>
+                        <div title="Các công ty ở Mumbai" class="ab_card lslide"
+                            style="width: 154px; margin-right: 20px;"><img style=" width: 5.9rem;
+                            height: 4.75rem;
+                            margin-bottom: 0.6rem;
+                            object-fit: contain;"
+                                src="https://static.ambitionbox.com/static/icons/locations/mumbai.svg" alt="Mumbai"> <a
+                                href="/companies-in-mumbai" class="bold-section-header location-anchor-text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Hà Nội
+                                    </font>
+                                </font>
+                            </a>
+                            <!---->
+                        </div>
+                        <div title="Các công ty ở Hyderabad" class="ab_card lslide"
+                            style="width: 154px; margin-right: 20px;"><img style=" width: 5.9rem;
+                            height: 4.75rem;
+                            margin-bottom: 0.6rem;
+                            object-fit: contain;"
+                                src="https://static.ambitionbox.com/static/icons/locations/hyderabad.svg"
+                                alt="Hyderabad"> <a href="/companies-in-hyderabad"
+                                class="bold-section-header location-anchor-text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Đà Nẵng
+                                    </font>
+                                </font>
+                            </a>
+                            <!---->
+                        </div>
+                        <div title="Các công ty ở Chennai" class="ab_card lslide"
+                            style="width: 154px; margin-right: 20px;"><img style=" width: 5.9rem;
+                            height: 4.75rem;
+                            margin-bottom: 0.6rem;
+                            object-fit: contain;"
+                                src="https://static.ambitionbox.com/static/icons/locations/chennai.svg" alt="Chennai">
+                            <a href="/companies-in-chennai" class="bold-section-header location-anchor-text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Phú Quốc
+                                    </font>
+                                </font>
+                            </a>
+                            <!---->
+                        </div>
+                        <div title="Các công ty ở Bengaluru" class="ab_card lslide"
+                            style="width: 154px; margin-right: 20px;"><img style=" width: 5.9rem;
+                            height: 4.75rem;
+                            margin-bottom: 0.6rem;
+                            object-fit: contain;"
+                                src="https://static.ambitionbox.com/static/icons/locations/bengaluru.svg"
+                                alt="Tiếng Bengaluru"> <a href="/companies-in-bengaluru"
+                                class="bold-section-header location-anchor-text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;"> Bình Dương
+                                    </font>
+                                </font>
+                            </a>
+                            <!---->
+                        </div>
+                        <div title="Các công ty ở Pune" class="ab_card lslide"
+                            style="width: 154px; margin-right: 20px;"><img style=" width: 5.9rem;
+                            height: 4.75rem;
+                            margin-bottom: 0.6rem;
+                            object-fit: contain;" src="https://static.ambitionbox.com/static/icons/locations/pune.svg"
+                                alt="Pune"> <a href="/companies-in-pune"
+                                class="bold-section-header location-anchor-text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;"> Cần Thơ
+                                    </font>
+                                </font>
+                            </a>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div> <span class="slider_prev hidden_control slider_btns"><i class="icon-chevron-right"></i></span> <span
+                class="slider_next slider_btns hidden_control"><i class="icon-chevron-right"></i></span>
+        </div>
+
+        <section class="white_section">
+            <div class="home_reviews">
+                <div class="section_heading_wrap">
+                    <div class="titleCont">
+                        <h2 class="section_heading">Đánh giá công ty</h2>
+                        <p class="section_subheading">
+                            Nhân viên thực sự chia sẻ cách làm việc tại công ty của họ.
+                        </p>
+                    </div>
+                    <a href="#" class="section_view_all">Xem tất cả</a>
+                </div>
+                <div class="slider_wrap">
+                    <div class="lSSlideOuter">
+                        <div class="lSSlideWrapper usingCss">
+                            <div class="lSSlideOuter ">
+                                <div class="lSSlideWrapper usingCss"
+                                    style="transition-duration: 300ms; transition-timing-function: ease;">
+                                    <ul id="reviewsSlider" class="lightSlider lsGrab lSSlide"
+                                        style="width: 2076px; height: 222.703px; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px);">
+                                        <li class="slider_item_wrap lslide active"
+                                            style="width: 332px; margin-right: 14px;">
+                                            <a href="/company.detail.html">
+                                                <div class="slider_item">
+                                                    <img class="review_logo" src="./images/pepsi.png"
+                                                        alt="logo_company">
+                                                    <div class="rev_user">
+                                                        <img src="./images/avt04.jpg" class="user_pic">
+                                                        <div class="user_details">
+                                                            <div class="user_name">Văn Nhanh (Nhân viên hiện tại)</div>
+                                                            <div class="user_profile">Software Engineer</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_details_wrap">
+                                                        <div class="review_details">
+                                                            <b>Thích: </b>Môi trường làm việc tốt, trẻ trung, năng động.
+                                                        </div>
+                                                        <div class="review_details">
+                                                            <b>Không thích: </b>Lầu cao, đi thang máy hơi tốn thời gian.
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_footer">
+                                                        <div class="rate-wrap">
+                                                            <div class="star-wrap">
+                                                                <div class="rated-stars" style="width: 79.6%">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                                <div class="plain-stars">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span class="review_counts">(2k Đánh giá)</span>
+                                                        </div>
+                                                        <div>
+                                                            <span href="#" class="review_link">Xem Chi tiết</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="slider_item_wrap lslide" style="width: 332px; margin-right: 14px;">
+                                            <a href="/company.detail.html">
+                                                <div class="slider_item">
+                                                    <img class="review_logo" src="./images/samsung.webp"
+                                                        alt="logo_company">
+                                                    <div class="rev_user">
+                                                        <img src="./images/avt05.jpg" class="user_pic">
+                                                        <div class="user_details">
+                                                            <div class="user_name">Duy Nam (Nhân viên hiện tại)</div>
+                                                            <div class="user_profile">Project Manager</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_details_wrap">
+                                                        <div class="review_details">
+                                                            <b>Thích: </b>Bãi đỗ xe rộng rãi, văn phòng đẹp nhiều tiện
+                                                            nghi.
+                                                        </div>
+                                                        <div class="review_details">
+                                                            <b>Không thích: </b> Giờ giấc chưa được linh hoạt.
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_footer">
+                                                        <div class="rate-wrap">
+                                                            <div class="star-wrap">
+                                                                <div class="rated-stars" style="width: 79.6%">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                                <div class="plain-stars">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span class="review_counts">(3k Đánh giá)</span>
+                                                        </div>
+                                                        <div>
+                                                            <span href="#" class="review_link">Xem Chi tiết</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="slider_item_wrap lslide" style="width: 332px; margin-right: 14px;">
+                                            <a href="/company.detail.html">
+                                                <div class="slider_item">
+                                                    <img class="review_logo" src="./images/tiki.png" alt="logo_company">
+                                                    <div class="rev_user">
+                                                        <img src="./images/avt06.jpg" class="user_pic">
+                                                        <div class="user_details">
+                                                            <div class="user_name">Minh (Nhân viên hiện tại)</div>
+                                                            <div class="user_profile">Software Engineer</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_details_wrap">
+                                                        <div class="review_details">
+                                                            <b>Thích: </b>Môi trường làm việc chuyên nghiệp, đồng nghiệp
+                                                            nhiệt tình, công ty hiện đại.
+                                                        </div>
+                                                        <div class="review_details">
+                                                            <b>Không thích :</b>Điều kiền đầu vào khó khăn
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_footer">
+                                                        <div class="rate-wrap">
+                                                            <div class="star-wrap">
+                                                                <div class="rated-stars" style="width: 79.6%">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                                <div class="plain-stars">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span class="review_counts">(3k Đánh giá)</span>
+                                                        </div>
+                                                        <div>
+                                                            <span href="#" class="review_link">Xem Chi tiết</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="slider_item_wrap lslide" style="width: 332px; margin-right: 14px;">
+                                            <a href="/company.detail.html">
+                                                <div class="slider_item">
+                                                    <img class="review_logo" src="./images/sunhouse.jpg"
+                                                        alt="logo_company">
+                                                    <div class="rev_user">
+                                                        <img src="./images/avt04.jpg" class="user_pic">
+                                                        <div class="user_details">
+                                                            <div class="user_name">Văn Nhanh (Nhân viên hiện tại)</div>
+                                                            <div class="user_profile">Software Engineer</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_details_wrap">
+                                                        <div class="review_details">
+                                                            <b>Thích :</b>Môi trường làm việc tốt, trẻ trung, năng động
+                                                        </div>
+                                                        <div class="review_details">
+                                                            <b>Không thích: </b>Lầu cao, đi thang máy hơi tốn thời gian.
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_footer">
+                                                        <div class="rate-wrap">
+                                                            <div class="star-wrap">
+                                                                <div class="rated-stars" style="width: 79.6%">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                                <div class="plain-stars">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span class="review_counts">(2k Đánh giá)</span>
+                                                        </div>
+                                                        <div>
+                                                            <span href="#" class="review_link">Xem Chi tiết</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="slider_item_wrap lslide" style="width: 332px; margin-right: 14px;">
+                                            <a href="/company.detail.html">
+                                                <div class="slider_item">
+                                                    <img class="review_logo" src="./images/samsung.webp"
+                                                        alt="logo_company">
+                                                    <div class="rev_user">
+                                                        <img src="./images/avt05.jpg" class="user_pic">
+                                                        <div class="user_details">
+                                                            <div class="user_name">Duy Nam (Nhân viên hiện tại)</div>
+                                                            <div class="user_profile">Software Engineer</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_details_wrap">
+                                                        <div class="review_details">
+                                                            <b>Thích: </b>Bãi đỗ xe rộng rãi, văn phòng đẹp nhiều tiện
+                                                            nghi.
+                                                        </div>
+                                                        <div class="review_details">
+                                                            <b>Không thích: </b> Giờ giấc chưa được linh hoạt.
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_footer">
+                                                        <div class="rate-wrap">
+                                                            <div class="star-wrap">
+                                                                <div class="rated-stars" style="width: 79.6%">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                                <div class="plain-stars">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span class="review_counts">(4k Đánh giá)</span>
+                                                        </div>
+                                                        <div>
+                                                            <span href="#" class="review_link">Xem Chi tiết</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="slider_item_wrap lslide" style="width: 332px; margin-right: 14px;">
+                                            <a href="/company.detail.html">
+                                                <div class="slider_item">
+                                                    <img class="review_logo" src="./images/vng2.png" alt="logo_company">
+                                                    <div class="rev_user">
+                                                        <img src="./images/avt06.jpg" class="user_pic">
+                                                        <div class="user_details">
+                                                            <div class="user_name">Công Minh (Nhân viên hiện tại)</div>
+                                                            <div class="user_profile">Software Engineer</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_details_wrap">
+                                                        <div class="review_details">
+                                                            <b>Thích: </b>Môi trường làm việc chuyên nghiệp, đồng nghiệp
+                                                            nhiệt tình, công ty hiện đại.
+                                                        </div>
+                                                        <div class="review_details">
+                                                            <b>Không thích: </b>Điều kiện đầu vào khó khăn.
+                                                        </div>
+                                                    </div>
+                                                    <div class="review_footer">
+                                                        <div class="rate-wrap">
+                                                            <div class="star-wrap">
+                                                                <div class="rated-stars" style="width: 79.6%">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                                <div class="plain-stars">
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                    <i class="icon-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span class="review_counts">(2k Đánh giá)</span>
+                                                        </div>
+                                                        <div>
+                                                            <span href="#" class="review_link">Xem Chi tiết</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="white_section">
+            <div class="home_reviews">
+                <div class="slider_wrap">
+                    <div class="lSSlideOuter">
+                        <div class="lSSlideWrapper usingCss">
+                            <ul id="reviewsSlider" class="lightSlider lsGrab lSSlide"
+                                style="width: 3806px; height: 230px; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px)">
+                                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                                    <a href="/company.detail.html">
+                                        <div class="slider_item">
+                                            <img class="review_logo" src="./images/mismart.png" alt="logo_company" />
+                                            <div class="rev_user">
+                                                <img src="./images/avt01.jpg" class="user_pic" />
+                                                <div class="user_details">
+                                                    <div class="user_name">Thiên Phú (Nhân viên hiện tại)</div>
+                                                    <div class="user_profile">Software Engineer</div>
+                                                </div>
+                                            </div>
+                                            <div class="review_details_wrap">
+                                                <div class="review_details">
+                                                    <b>Thích: </b>Đồng nghiệp thân thiện, thời gian thoải mái.
+                                                </div>
+                                                <div class="review_details">
+                                                    <b>Không thích: </b>Nằm ở xa trung tâm.
+                                                </div>
+                                            </div>
+                                            <div class="review_footer">
+                                                <div class="rate-wrap">
+                                                    <div class="star-wrap">
+                                                        <div class="rated-stars" style="width: 79.6%">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                        <div class="plain-stars">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <span class="review_counts">(2k Đánh giá)</span>
+                                                </div>
+                                                <div>
+                                                    <span href="#" class="review_link">Xem Chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                                    <a href="/company.detail.html">
+                                        <div class="slider_item">
+                                            <img class="review_logo" src="./images/fpt.png" alt="logo_company" />
+                                            <div class="rev_user">
+                                                <img src="./images/avt02.jpg" class="user_pic" />
+                                                <div class="user_details">
+                                                    <div class="user_name">Thanh Sơn (Nhân viên hiện tại)</div>
+                                                    <div class="user_profile">Project Manager</div>
+                                                </div>
+                                            </div>
+                                            <div class="review_details_wrap">
+                                                <div class="review_details">
+                                                    <b>Thích: </b>Môi trường năng động, được tiếp xúc và học hỏi nhiều
+                                                    với các đối tác nước ngoài. Đội HR đông đảo và hơi bị xinh.
+                                                </div>
+                                                <div class="review_details">
+                                                    <b>Không thích: </b> Tuyển người liên tục nên nhân lực bị thiếu
+                                                    chuyên môn.
+                                                </div>
+                                            </div>
+                                            <div class="review_footer">
+                                                <div class="rate-wrap">
+                                                    <div class="star-wrap">
+                                                        <div class="rated-stars" style="width: 79.6%">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                        <div class="plain-stars">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <span class="review_counts">(3k Đánh giá)</span>
+                                                </div>
+                                                <div>
+                                                    <span href="#" class="review_link">Xem Chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                                    <a href="/company.detail.html">
+                                        <div class="slider_item">
+                                            <img class="review_logo" src="./images/basketball.png" alt="logo_company" />
+                                            <div class="rev_user">
+                                                <img src="./images/avt03.png" class="user_pic" />
+                                                <div class="user_details">
+                                                    <div class="user_name">Quang Tuyến (Nhân viên hiện tại)</div>
+                                                    <div class="user_profile">Software Engineer</div>
+                                                </div>
+                                            </div>
+                                            <div class="review_details_wrap">
+                                                <div class="review_details">
+                                                    <b>Thích :</b>Ở trung tâm thành phố, thuận tiện cho việc đi lại.
+                                                </div>
+                                                <div class="review_details">
+                                                    <b>Không thích :</b>Giờ giấc nghiêm ngặt.
+                                                </div>
+                                            </div>
+                                            <div class="review_footer">
+                                                <div class="rate-wrap">
+                                                    <div class="star-wrap">
+                                                        <div class="rated-stars" style="width: 79.6%">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                        <div class="plain-stars">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <span class="review_counts">(3k Đánh giá)</span>
+                                                </div>
+                                                <div>
+                                                    <span href="#" class="review_link">Xem Chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                                    <a href="/company.detail.html">
+                                        <div class="slider_item">
+                                            <img class="review_logo" src="./images/sunhouse.jpg" alt="logo_company" />
+                                            <div class="rev_user">
+                                                <img src="./images/avt04.jpg" class="user_pic" />
+                                                <div class="user_details">
+                                                    <div class="user_name">Văn Nhanh (Nhân viên hiện tại)</div>
+                                                    <div class="user_profile">Software Engineer</div>
+                                                </div>
+                                            </div>
+                                            <div class="review_details_wrap">
+                                                <div class="review_details">
+                                                    <b>Thích :</b>Môi trường làm việc tốt, trẻ trung, năng động
+                                                </div>
+                                                <div class="review_details">
+                                                    <b>Không thích: </b>Lầu cao, đi thang máy hơi tốn thời gian.
+                                                </div>
+                                            </div>
+                                            <div class="review_footer">
+                                                <div class="rate-wrap">
+                                                    <div class="star-wrap">
+                                                        <div class="rated-stars" style="width: 79.6%">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                        <div class="plain-stars">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <span class="review_counts">(2k Đánh giá)</span>
+                                                </div>
+                                                <div>
+                                                    <span href="#" class="review_link">Xem Chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                                    <a href="/company.detail.html">
+                                        <div class="slider_item">
+                                            <img class="review_logo" src="./images/samsung.webp" alt="logo_company" />
+                                            <div class="rev_user">
+                                                <img src="./images/avt05.jpg" class="user_pic" />
+                                                <div class="user_details">
+                                                    <div class="user_name">Duy Nam (Nhân viên hiện tại)</div>
+                                                    <div class="user_profile">Software Engineer</div>
+                                                </div>
+                                            </div>
+                                            <div class="review_details_wrap">
+                                                <div class="review_details">
+                                                    <b>Thích: </b>Bãi đỗ xe rộng rãi, văn phòng đẹp nhiều tiện nghi.
+                                                </div>
+                                                <div class="review_details">
+                                                    <b>Không thích: </b> Giờ giấc chưa được linh hoạt.
+                                                </div>
+                                            </div>
+                                            <div class="review_footer">
+                                                <div class="rate-wrap">
+                                                    <div class="star-wrap">
+                                                        <div class="rated-stars" style="width: 79.6%">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                        <div class="plain-stars">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <span class="review_counts">(4k Đánh giá)</span>
+                                                </div>
+                                                <div>
+                                                    <span href="#" class="review_link">Xem Chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slider_item_wrap lslide active" style="width: 332px; margin-right: 14px">
+                                    <a href="/company.detail.html">
+                                        <div class="slider_item">
+                                            <img class="review_logo" src="./images/vng2.png" alt="logo_company" />
+                                            <div class="rev_user">
+                                                <img src="./images/avt06.jpg" class="user_pic" />
+                                                <div class="user_details">
+                                                    <div class="user_name">Công Minh (Nhân viên hiện tại)</div>
+                                                    <div class="user_profile">Software Engineer</div>
+                                                </div>
+                                            </div>
+                                            <div class="review_details_wrap">
+                                                <div class="review_details">
+                                                    <b>Thích: </b>Môi trường làm việc chuyên nghiệp, đồng nghiệp nhiệt
+                                                    tình, công ty hiện đại.
+                                                </div>
+                                                <div class="review_details">
+                                                    <b>Không thích: </b>Điều kiện đầu vào khó khăn.
+                                                </div>
+                                            </div>
+                                            <div class="review_footer">
+                                                <div class="rate-wrap">
+                                                    <div class="star-wrap">
+                                                        <div class="rated-stars" style="width: 79.6%">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                        <div class="plain-stars">
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                            <i class="icon-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <span class="review_counts">(2k Đánh giá)</span>
+                                                </div>
+                                                <div>
+                                                    <span href="#" class="review_link">Xem Chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section class="white_section">
+            <div id="abh_info" class="content container">
+                <div class="ab_section-header container flex">
+                    <div class="titleCont">
+                        <h2 class="title bold-title-l"> <span>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Các công ty top đầu</font>
+                                </font>
+                            </span>
+                            <!---->
+                        </h2>
+                        <!---->
+                        <!---->
+                        <!---->
+                    </div>
+                </div>
+            </div>
+            <div class="lSSlideOuter ">
+                <div class="lSSlideWrapper usingCss"
+                    style="/* transition-duration: 300ms; *//* transition-timing-function: ease; */">
+                    <div id="popular-companies" class="card-slider lightSlider lSSlide lsGrab"
+                        style="/* width: 5220px; *//* height: 318px; *//* padding-bottom: 0%; *//* transform: translate3d(0px, 0px, 0px); */">
+                        <div class="shadow-buffer lslide active" data-v-6b7f9d50=""
+                            style="width: 328px;margin-right: 20px;">
+                            <!---->
+                            <div id="popular-companies" class="ab_company_info-card padder" data-v-6b7f9d50="">
+                                <div title="Tata Group" class="ab_card slimCard borderFix padding-fix border company">
+                                    <div class="img"><img
+                                            data-src="https://static.ambitionbox.com/alpha/company/photos/logos/tata-group.jpg"
+                                            width="64" height="64" alt="Tata Group"
+                                            src="https://static.ambitionbox.com/alpha/company/photos/logos/tata-group.jpg"
+                                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                            class="logo lazy loaded" data-was-processed="true"></div>
+                                    <div class="info"><a href="/overview/tata-group-overview" title="Tata Group"
+                                            class="title bold-section-header">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Tata Group
+                                                </font>
+                                            </font>
+                                        </a>
+                                        <div title="Kiến trúc / Thiết kế nội thất, Ô tô, Kỹ thuật &amp; Xây dựng"
+                                            class="industry body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Kiến trúc / Thiết kế nội thất, Ô tô, Kỹ thuật &amp; Xây dựng
+                                                </font>
+                                            </font>
+                                        </div>
+                                        <!---->
+                                        <div class="rating">
+                                            <div title="Đánh giá 3,98" class="badge-cont">
+                                                <div class="badge-large rating-4"><i class="icon icon-star"></i> <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">4.0</font>
+                                                        </font>
+                                                    </span></div>
+                                            </div>
+                                            <div class="desc caption-subdued-medium">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        68,2k đánh giá
+                                                    </font>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="company-action-center">
+                                    <div class="action-item"><a href="/reviews/tata-group-reviews"
+                                            title="Đánh giá của Tata Group bởi nhân viên" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Nhận xét</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/salaries/tata-group-salaries"
+                                            target="_blank" title="Mức lương của Tata Group" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Lương</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/interviews/tata-group-interview-questions"
+                                            target="_blank" title="Các câu hỏi và mẹo của Cuộc phỏng vấn nhóm Tata"
+                                            class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Phỏng vấn</font>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div id="popular-companies" class="ab_company_info-card" data-v-6b7f9d50="">
+                                <div title="TCS" class="ab_card slimCard borderFix padding-fix border company">
+                                    <div class="img"><img
+                                            data-src="https://static.ambitionbox.com/alpha/company/photos/logos/tcs.jpg"
+                                            width="64" height="64" alt="TCS"
+                                            src="https://static.ambitionbox.com/alpha/company/photos/logos/tcs.jpg"
+                                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                            class="logo lazy loaded" data-was-processed="true"></div>
+                                    <div class="info"><a href="/overview/tcs-overview" title="TCS"
+                                            class="title bold-section-header">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">TCS
+                                                </font>
+                                            </font>
+                                        </a>
+                                        <div title="BPO / Call Center, Dịch vụ CNTT &amp; Tư vấn"
+                                            class="industry body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    BPO / Call Center, Dịch vụ CNTT &amp; Tư vấn
+                                                </font>
+                                            </font>
+                                        </div>
+                                        <!---->
+                                        <div class="rating">
+                                            <div title="Đánh giá 3,93" class="badge-cont">
+                                                <div class="badge-large rating-35"><i class="icon icon-star"></i> <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">3,9</font>
+                                                        </font>
+                                                    </span></div>
+                                            </div>
+                                            <div class="desc caption-subdued-medium">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        32,9k đánh giá
+                                                    </font>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="company-action-center">
+                                    <div class="action-item"><a href="/reviews/tcs-reviews"
+                                            title="Đánh giá TCS của nhân viên" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Nhận xét</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a href="https://www.ambitionbox.com/salaries/tcs-salaries"
+                                            target="_blank" title="Lương TCS" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Lương</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/interviews/tcs-interview-questions"
+                                            target="_blank" title="Các câu hỏi và mẹo trong Phỏng vấn TCS"
+                                            class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Phỏng vấn</font>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow-buffer lslide" data-v-6b7f9d50="" style="width: 328px; margin-right: 20px;">
+                            <!---->
+                            <div id="popular-companies" class="ab_company_info-card padder" data-v-6b7f9d50="">
+                                <div title="Reliance Industries"
+                                    class="ab_card slimCard borderFix padding-fix border company">
+                                    <div class="img"><img
+                                            data-src="https://static.ambitionbox.com/alpha/company/photos/logos/reliance.jpg"
+                                            width="64" height="64" alt="Reliance Industries"
+                                            src="https://static.ambitionbox.com/alpha/company/photos/logos/reliance.jpg"
+                                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                            class="logo lazy loaded" data-was-processed="true"></div>
+                                    <div class="info"><a href="/overview/reliance-overview" title="Reliance Industries"
+                                            class="title bold-section-header">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Reliance Industries
+                                                </font>
+                                            </font>
+                                        </a>
+                                        <div title="Sản xuất, Dầu / Khí / Hóa chất dầu khí, Điện, Dệt may, Dầu khí, Hóa dầu / Nhựa / Cao su"
+                                            class="industry body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Sản xuất, Dầu / Khí / Hóa chất dầu khí, Điện, Dệt may, Dầu khí, Hóa
+                                                    dầu / Nhựa / Cao su
+                                                </font>
+                                            </font>
+                                        </div>
+                                        <!---->
+                                        <div class="rating">
+                                            <div title="Đánh giá 4,02" class="badge-cont">
+                                                <div class="badge-large rating-4"><i class="icon icon-star"></i> <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">4.0</font>
+                                                        </font>
+                                                    </span></div>
+                                            </div>
+                                            <div class="desc caption-subdued-medium">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        30,8 nghìn đánh giá
+                                                    </font>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="company-action-center">
+                                    <div class="action-item"><a href="/reviews/reliance-reviews"
+                                            title="Reliance Industries Đánh giá bởi nhân viên" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Nhận xét</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/salaries/reliance-salaries"
+                                            target="_blank" title="Mức lương của Reliance Industries"
+                                            class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Lương</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/interviews/reliance-interview-questions"
+                                            target="_blank" title="Các câu hỏi và mẹo cho Phỏng vấn Reliance Industries"
+                                            class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Phỏng vấn</font>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div id="popular-companies" class="ab_company_info-card" data-v-6b7f9d50="">
+                                <div title="Ngân hàng HDFC"
+                                    class="ab_card slimCard borderFix padding-fix border company">
+                                    <div class="img"><img
+                                            data-src="https://static.ambitionbox.com/alpha/company/photos/logos/hdfc.jpg"
+                                            width="64" height="64" alt="Ngân hàng HDFC"
+                                            src="https://static.ambitionbox.com/alpha/company/photos/logos/hdfc.jpg"
+                                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                            class="logo lazy loaded" data-was-processed="true"></div>
+                                    <div class="info"><a href="/overview/hdfc-bank-overview" title="Ngân hàng HDFC"
+                                            class="title bold-section-header">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Ngân hàng HDFC
+                                                </font>
+                                            </font>
+                                        </a>
+                                        <div title="Dịch vụ tài chính, ngân hàng, bảo hiểm"
+                                            class="industry body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Dịch vụ tài chính, ngân hàng, bảo hiểm
+                                                </font>
+                                            </font>
+                                        </div>
+                                        <!---->
+                                        <div class="rating">
+                                            <div title="Đánh giá 3,99" class="badge-cont">
+                                                <div class="badge-large rating-4"><i class="icon icon-star"></i> <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">4.0</font>
+                                                        </font>
+                                                    </span></div>
+                                            </div>
+                                            <div class="desc caption-subdued-medium">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        28,6k đánh giá
+                                                    </font>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="company-action-center">
+                                    <div class="action-item"><a href="/reviews/hdfc-bank-reviews"
+                                            title="Ngân hàng HDFC Đánh giá của nhân viên" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Nhận xét</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/salaries/hdfc-bank-salaries"
+                                            target="_blank" title="Tiền lương ngân hàng HDFC" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Lương</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/interviews/hdfc-bank-interview-questions"
+                                            target="_blank" title="Các câu hỏi và mẹo về Phỏng vấn Ngân hàng HDFC"
+                                            class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Phỏng vấn</font>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow-buffer lslide" data-v-6b7f9d50="" style="width: 328px; margin-right: 20px;">
+                            <!---->
+                            <div id="popular-companies" class="ab_company_info-card padder" data-v-6b7f9d50="">
+                                <div title="Ngân hàng ICICI"
+                                    class="ab_card slimCard borderFix padding-fix border company">
+                                    <div class="img"><img
+                                            data-src="https://static.ambitionbox.com/alpha/company/photos/logos/icici_bank.jpg"
+                                            width="64" height="64" alt="Ngân hàng ICICI"
+                                            src="https://static.ambitionbox.com/alpha/company/photos/logos/icici_bank.jpg"
+                                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                            class="logo lazy loaded" data-was-processed="true"></div>
+                                    <div class="info"><a href="/overview/icici-bank-overview" title="Ngân hàng ICICI"
+                                            class="title bold-section-header">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Ngân hàng ICICI
+                                                </font>
+                                            </font>
+                                        </a>
+                                        <div title="Hóa chất / Đầu vào nông nghiệp, Dịch vụ tài chính, Sản xuất, Ngân hàng"
+                                            class="industry body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Hóa chất / Đầu vào nông nghiệp, Dịch vụ tài chính, Sản xuất, Ngân
+                                                    hàng
+                                                </font>
+                                            </font>
+                                        </div>
+                                        <!---->
+                                        <div class="rating">
+                                            <div title="Đánh giá 3,97" class="badge-cont">
+                                                <div class="badge-large rating-4"><i class="icon icon-star"></i> <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">4.0</font>
+                                                        </font>
+                                                    </span></div>
+                                            </div>
+                                            <div class="desc caption-subdued-medium">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        27,9k đánh giá
+                                                    </font>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="company-action-center">
+                                    <div class="action-item"><a href="/reviews/icici-bank-reviews"
+                                            title="Đánh giá của Ngân hàng ICICI bởi nhân viên" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Nhận xét</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/salaries/icici-bank-salaries"
+                                            target="_blank" title="Lương Ngân hàng ICICI" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Lương</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/interviews/icici-bank-interview-questions"
+                                            target="_blank" title="Các câu hỏi và mẹo về Phỏng vấn Ngân hàng ICICI"
+                                            class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Phỏng vấn</font>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div id="popular-companies" class="ab_company_info-card" data-v-6b7f9d50="">
+                                <div title="L&amp;T" class="ab_card slimCard borderFix padding-fix border company">
+                                    <div class="img"><img
+                                            data-src="https://static.ambitionbox.com/alpha/company/photos/logos/l-and-t.jpg"
+                                            width="64" height="64" alt="L&amp;T"
+                                            src="https://static.ambitionbox.com/alpha/company/photos/logos/l-and-t.jpg"
+                                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg'"
+                                            class="logo lazy loaded" data-was-processed="true"></div>
+                                    <div class="info"><a href="/overview/l-and-t-overview" title="L&amp;T"
+                                            class="title bold-section-header">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">L&amp;T
+                                                </font>
+                                            </font>
+                                        </a>
+                                        <div title="Kỹ thuật &amp; Xây dựng, Tự động hóa công nghiệp"
+                                            class="industry body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+                                                    Kỹ thuật &amp; Xây dựng, Tự động hóa công nghiệp
+                                                </font>
+                                            </font>
+                                        </div>
+                                        <!---->
+                                        <div class="rating">
+                                            <div title="Đánh giá 3,94" class="badge-cont">
+                                                <div class="badge-large rating-35"><i class="icon icon-star"></i> <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">3,9</font>
+                                                        </font>
+                                                    </span></div>
+                                            </div>
+                                            <div class="desc caption-subdued-medium">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                        23,5 nghìn đánh giá
+                                                    </font>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="company-action-center">
+                                    <div class="action-item"><a href="/reviews/l-and-t-reviews"
+                                            title="Đánh giá của L&amp;T bởi nhân viên" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Nhận xét</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/salaries/l-and-t-salaries" target="_blank"
+                                            title="Lương L&amp;T" class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Lương</font>
+                                            </font>
+                                        </a></div>
+                                    <div class="action-item"><a
+                                            href="https://www.ambitionbox.com/interviews/l-and-t-interview-questions"
+                                            target="_blank" title="Các câu hỏi và mẹo của Phỏng vấn L&amp;T"
+                                            class="body-medium">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Phỏng vấn</font>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    </div>
+    </div>
+
+    <footer style="margin-top: 10px;" class="footer_wrap">
+        <div class="footer_links_content">
+            <div class="info">
+                <div class="logo_wrap">
+                    <img src="./images/app.png" style="width: 100px; height: 100px;" />
+                    <span class="logo_text">JobsReview</span>
+                </div>
+            </div>
+            <div class="quick_links_wrap">
+                <p>Người dùng</p>
+                <div class="quick_links">
+                    <div class="quick_link">
+                        <a href="#">Công ty</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Đánh giá</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Tiền lương</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Công việc</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_links_wrap">
+                <p>JobsReview</p>
+                <div class="quick_links">
+                    <div class="quick_link">
+                        <a href="#">Về chúng tôi</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Làm việc với chúng tôi</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Gửi email cho chúng tôi</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_links_wrap">
+                <p>Hỗ trợ</p>
+                <div class="quick_links">
+                    <div class="quick_link">
+                        <a href="#">Chính sách bảo mật</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Than phiền</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Triệu tập/Thông báo</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Nguyên tắc cộng đồng</a>
+                    </div>
+                    <div class="quick_link">
+                        <a href="#">Điều khoản sử dụng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick_btns_wrap"></div>
+            <div class="quick_btns_wrap">
+                <p>Theo dõi chúng tôi</p>
+                <div class="social">
+                    <a href="#">
+                        <img class="lazyload" alt="logo instagram" width="24" height="24"
+                            src="./images/instagram-logo.svg" />
+                    </a>
+                    <a href="#">
+                        <img class="lazyload" alt="logo linkedin" width="24" height="24"
+                            src="./images/linkedin-logo.svg" />
+                    </a>
+                    <a href="#">
+                        <img class="lazyload" alt="logo facebook" width="24" height="24" src="./images/fb-logo.svg" />
+                    </a>
+                    <a href="#">
+                        <img class="lazyload" alt="logo twitter" width="24" height="24"
+                            src="./images/twitter-logo.svg" />
+                    </a>
+                </div>
+                <p>Đóng góp</p>
+                <a href="#">
+                    <button class="btn">Viết bài đánh giá</button>
+                </a>
+                <a href="#">
+                    <button class="btn">Chia sẻ về tiền lương</button>
+                </a>
+            </div>
+        </div>
+        <div class="copy_right_wrap">
+            <p>Tất cả các quyền được bảo lưu © 2022 Bitcoin Team HCMUS.</p>
+        </div>
+    </footer>
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/common.js"></script>
+    <script src="./javascripts/lightslider.min.js"></script>
+    <script src="./javascripts/home.js"></script>
+</body>
+
+</html>
